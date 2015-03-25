@@ -182,9 +182,9 @@ pre {
   -webkit-hyphens: none;
   -moz-hyphens: none;
   hyphens: none;
-  overflow: auto;
-  word-wrap: normal;
-  white-space: pre;
+  overflow: scroll;
+  /*    word-wrap: normal;*/
+
 }
 /* CSS For Lesson*/
 .link-heading {
