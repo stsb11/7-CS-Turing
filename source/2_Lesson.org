@@ -100,7 +100,9 @@
 :HTML_CONTAINER_CLASS: learn
 :END:
 - Up until now you have been coding in the =INTERPRETER=
-- This is useful for testing out single lines of code, but to do anything more powerful, we want a way to be able to save our work, and write programs of more than a few lines.
+- When Turing came up with the concept of his /Turing Machine/ he imagined that cards would be used where instructions could be written for the machine to act upon, depending upon what was written on the tape.
+- We want to use the Python equivalent of these cards.
+- We call these programs or scripts
 ** Try It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
@@ -139,6 +141,10 @@ bar
 baz
 #+end_src
 - You'll see the values displayed in the interpreter.
+* Printing
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
@@ -223,6 +229,10 @@ Ba Ba Black Sheep
 #+begin_src python
 Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep 
 #+end_src
+* Gettin Input
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
 ** Learn It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
@@ -276,6 +286,10 @@ answer = firstNum + secondNum
 print('The answer to your easy question is ' + answer)
 #+end_src
 - Run your code and see what happens.
+* Converting Types
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
 ** Learn It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
@@ -296,6 +310,7 @@ print('The answer to your easy question is ' + answer)
 :HTML_CONTAINER_CLASS: code
 :END:
 - What we need to do is find a way to convert our strings to integers.
+- When we convert one type to another, it is called =Type Casting=
 - This is easy to do with some more inbuilt functions. In this case we're going to use the =int()= inbuilt function.
 - Try the following in the =INTERPRETER=
 #+begin_src python

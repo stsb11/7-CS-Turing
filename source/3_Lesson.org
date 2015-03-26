@@ -226,6 +226,10 @@ score = score + 1
 - adds 1 to the score. As it has whitespace before it, it only runs when the user gets the answer correct.
 - Add 9 more questions to your script.
 
+* Type Casting again
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
 ** Learn It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
@@ -248,8 +252,6 @@ print('You scored ' + str(score))
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-
-
 - Can you remember how to use int() to change a user's input into a number.
 - We could add some Maths questions to our script by using int()
 - Here's an example question, and the beauty of it is that we don't have to work out the answer ourselves.

@@ -176,13 +176,50 @@ While it is raining outside, I am staying indoor.
 - This time we'll use the ==!= comparison (not equal to)
 #+begin_src python
   password = 'correct horse battery staple'
-  attempt = input('Please enter a password' )
+  attempt = input('Please enter a password ')
   while attempt != password:
       print('Access denied')
       attempt = input('Please enter a password ')
   print('Access granted.)
 #+end_src
-
+** Badge It - Silver
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- Try and write a script that asks the user to answer a simple sum.
+- If they get it right, they should be congratulated
+- If they get it wrong they should be asked the question again.
+- Don't forget to type cast the user input.
+* Counting
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- One of the simplest tasks we can get a computer to do is to count.
+- When you count to 100, you start at 1 and then keep adding on 1 until you get to 100.
+- Let's code this with a =while= loop.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+#+begin_src python
+  count = 1
+  while count <= 100:
+      print(count)
+      count = count + 1
+#+end_src
+- Can you alter the code so that the computer counts to 10000
+- Alter it so that it counts in 2s, then 10s
+** Badge It - Gold
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- Create a while loop that counts down from 100 to 0.
+- Create a while loop that prints out 1, and then doubles it, printing out the answer each time until it reaches 1,000,000
+- Create a while loop that 
 ** Research It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: research
