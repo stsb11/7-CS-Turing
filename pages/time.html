@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+     #box{
+       width:800px;
+      margin-left:auto;
+      margin-right:auto;
+      }
+    </style>
+  </head>
 <body>
-
-<canvas id="canvas" width="400" height="400"
+  <div id='box'>
+<canvas id="canvas" width="800" height="800"
 style="background-color:#333">
 </canvas>
 
@@ -88,6 +97,6 @@ function drawHand(ctx, pos, length, width) {
     ctx.rotate(-pos);
 }
 </script>
-
+  </div>
 </body>
 </html>

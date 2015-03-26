@@ -176,64 +176,90 @@ While it is raining outside, I am staying indoor.
 - This time we'll use the ==!= comparison (not equal to)
 #+begin_src python
   password = 'correct horse battery staple'
-  attempt = input('Please enter a password' )
+  attempt = input('Please enter a password ')
   while attempt != password:
       print('Access denied')
       attempt = input('Please enter a password ')
   print('Access granted.)
 #+end_src
-
-** Research It
+** Badge It - Silver
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: research
+:HTML_CONTAINER_CLASS: badge
 :END:
-
-** Design It
+- Try and write a script that asks the user to answer a simple sum.
+- If they get it right, they should be congratulated
+- If they get it wrong they should be asked the question again.
+- Don't forget to type cast the user input.
+* Counting
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: design
+:HTML_CONTAINER_CLASS: activity
 :END:
-
-** Build It
+** Learn It
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: build
+:HTML_CONTAINER_CLASS: learn
 :END:
-
-** Test It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: test
-:END:
-
-** Run It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: run
-:END:
-
-** Document It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: document
-:END:
-
+- One of the simplest tasks we can get a computer to do is to count.
+- When you count to 100, you start at 1 and then keep adding on 1 until you get to 100.
+- Let's code this with a =while= loop.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-
-** Program It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: program
-:END:
-
-** Try It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: try
-:END:
-
-** Badge It
+#+begin_src python
+  count = 1
+  while count <= 100:
+      print(count)
+      count = count + 1
+#+end_src
+- Can you alter the code so that the computer counts to 10000
+- Alter it so that it counts in 2s, then 10s
+** Badge It - Gold
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-
-** Save It
+- Create a while loop that counts down from 100 to 0.
+- Create a while loop that prints out 1, and then doubles it, printing out the answer each time until it reaches 1,000,000
+- Create a while loop that prints out *Computing is Grrrreat* a thousand times.
+* Singing
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: save
+:HTML_CONTAINER_CLASS: activity
 :END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- There are lots of counting songs that children use to learn to count:
+  - 5 Little Ducks went swimming one day
+  - 5 Currant Buns in a baker's shop
+  - 5 Little Speckled Frogs
+  - 5 Little Monkeys
+  - 5 Red Apples
+- If you don't know the lyrics, you can listen to some of them[[http://www.bbc.co.uk/schoolradio/subjects/mathematics/countingsongs][ here]].
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- Writing out the lyrics to a simple counting song wouldn't take too long.
+- You could probably write out the lyrics to 10 Green Bottles fairly quickly
+#+begin_html
+<iframe width="420" height="315" src="https://www.youtube.com/embed/Ak7kedzR8bg" frameborder="0" allowfullscreen></iframe>
+#+end_html
+- But what if I asked you to write out the lyrics to 1000 green bottles.
+- Have a look at the script below.
+#+begin_src python
+bottles = 1000
+while bottles > 0:
+    print(str(bottles) + ' green bottles sitting on the wall')
+    print(str(bottles) + ' green bottles sitting on the wall')
+    print('And if one green bottle should accidently fall')
+    bottles = bottles -1
+    print("There'll be " + str(bottles) + ' green bottles, sitting on the wall')
+#+end_src
+- Copy and paste the code into a new script and run it. You can change the bottles variable to anything you like.
+** Badge It - Platinum
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- Try and create a script to write out the lyrics of one of the songs listed above.
+- Use a variable to keep track of the numbers of Frogs, Buns or Ducks, and a while loop to change them.
+
