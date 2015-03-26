@@ -247,6 +247,15 @@ numberEggs = daysInYear * lifeTime
 #+end_src
 - We started by assigning two variables to have integer values. Then we assigned a third variable (=numberEggs=) to be the result of multiplying (=*=) the previous variables together.
 - In Python we can use =+= and =-= for addition and subtraction, =/= and =*= for division and multiplication.
+- There are lots of mathematical =operators= we can use. Here is a table of all of them for reference later on.
+| Operator | Description                                           | Example                                         |
+|----------+-------------------------------------------------------+-------------------------------------------------|
+| +        | Addition - Adds values on either side of the operator | a + b will give 30                              |
+| *        | Multiplication                                        | a * b will give 200                             |
+| /        | Division                                              | b / a will give 2                               |
+| %        | Modulus - *remainder* of a division                   | b % a will give 0                               |
+| **       | To the power of                                       | a**b will give 10 to the power 20               |
+| //       | Division and round down                               | 9//2 is equal to 4 and 9.0//2.0 is equal to 4.0 |
 - Let's try another one.
 #+begin_quote
 A snake can slither 20cm in 15 minutes. How many hours would it take the snake to travel 100cm
