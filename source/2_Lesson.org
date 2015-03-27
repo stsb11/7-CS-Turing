@@ -91,7 +91,7 @@
 :HTML_CONTAINER_CLASS: save
 :END:
 
-* Scripting in Python
+* Manipulating Variable Values
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -99,239 +99,131 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- Up until now you have been coding in the =INTERPRETER=
-- When Turing came up with the concept of his /Turing Machine/ he imagined that cards would be used where instructions could be written for the machine to act upon, depending upon what was written on the tape.
-- We want to use the Python equivalent of these cards.
-- We call these programs or scripts
-** Try It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: try
-:END:
-- Find and open IDLE again.
-- Now using your keyboard, hit =Ctrl= + =n= to make a new file.
-- A second window should open up that looks like this.
-[[file:img/script.png]]
-- At the moment it is /Untitled/ so we had best give it a name.
-- Hit =Ctrl= + =s= on your keyboard to save the file.
-- Give it the name =firstScript.py=
-- *Make sure you save it in a new directory, and not in the default chosen by IDLE.*
-- The =.py= file extension is important. It lets the Operating System know that the file needs to be run with Python, and not another application like Notepad.
-- With the =.py= extension, you'll also get help with the language syntax as key words will be coloured.
-** Code It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: code
-:END:
-- Let's write a simple script in our new window. If you see the keyword =SCRIPT= in this resource you know you should be writing in this window. If you see the keyword =INTERPRETER= you know you should be writing in the interpreter window.
-#+begin_src python
-foo = 10
-bar = 12
-baz = foo + bar
-#+end_src
-- You need to save your file again =Ctrl= + =s= and then use the =F5= key to run the program.
-** Learn It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
-:END:
-- You'll have noticed that nothing appears to happen.
-- Your program has actually run though, and your variables are stored in RAM.
-- Flick over into your =INTERPRETER= and try querying the variables.
-#+begin_src python
-foo
-bar
-baz
-#+end_src
-- You'll see the values displayed in the interpreter.
-* Printing
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
-:END:
-** Code It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: code
-:END:
-- It's going to be annoying if we have to constantly jump into the interpreter to see what the values of our variables are.
-- To display data, most programming languages have a method of outputting data. In Python we use an inbuilt function called =print()=.
-- Make a second script called =secondScript.py= (=Ctrl+n= then =Ctrl+s=)
-- Write this in your =SCRIPT=
-#+begin_src python
-print(Hello World!)
-#+end_src
-- Run the script and see what happens.
-- We get a =syntax error= because the Python Interpreter thinks that Hello is some sort of variable that we haven't created.
-- We need to make sure that it realises we're either printing strings, numbers or the values of variables
-- Try this instead
-#+begin_src python
-print('Hello World!')
-#+end_src
-- Now we've put quotes around the words, we can run our script.
-** Learn It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
-:END:
-- We can print almost anything we like. Try out the following little scripts.
-#+begin_src python
-foo = 'Hi I am foo'
-print(foo)
-#+end_src
-#+begin_src python
-bar = 6
-baz = 8
-print(baz-bar)
-#+end_src
-#+begin_src python
-qux = 100
-print("Now that's a lot of qux"*qux)
-#+end_src
-#+begin_src python
-foo = 'Hello'
-bar = ' '
-baz = 'World!'
-print(foo+bar+baz)
-#+end_src
+- Last lesson you used Python to perform some calculations.
+- Let's have a quick test to see how well you remember how to perform calculations.
 ** Badge It - Silver
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- Using only the variables provided in each of the scripts below, create print statements that produce the displayed output.
-*** Set A
-#+begin_src python
-foo = 10
-bar = 5
-baz = 12 
-#+end_src
-*** Output 1
-#+begin_src python
-50
-#+end_src
-*** Output 2
-#+begin_src python
-6
-#+end_src
-*** Output 3
-#+begin_src python
-238
-#+end_src
-*** Set B
-#+begin_src python
-foo = 'Ba '
-bar = 'Black Sheep '
-baz = 10
-#+end_src
-*** Output 1
-#+begin_src python
-Ba Ba
-#+end_src
-*** Output 2
-#+begin_src python
-Ba Ba Black Sheep
-#+end_src
-*** Output 3
-#+begin_src python
-Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep 
-#+end_src
-* Gettin Input
+1. What is the sum of the following numbers - 5,1,4,9,12
+2. What is the product of the following numbers - 4,1,2,8,9,12
+3. What is the remainder of dividing 12 by 5
+4. What is 12% of 32
+5. If I add 6 to 4, multiply the answer by 10 and then raise to the power of 2, what is the answer.
+** Try It
+- Using variables can help us solve more complex problems.
+- Let's try and use variables to solve some trickier problems.
+- Let's imagine you're in a maths class and you are given the following problem.
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: try
 :END:
-** Learn It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
-:END:
-- Now that you've got the idea of printing, let's have a look at user input.
-- Sometime we'll want the user of our program to be able to set variable values. This is handled using the inbuilt =input()= function.
-- Here's an example of the use of =input()=
+#+begin_quote
+A chicken can lay a single egg, every day. If a chicken lives for seven years, what is the maximum number of eggs it can lay in it's lifetime?
+#+end_quote
+- We can use Python to help us work this out, using a few simple variables.
 #+begin_src python
-name = input('What is your name?)
+daysInYear = 365
+lifeTime = 7
+numberEggs = daysInYear * lifeTime
 #+end_src
-- It is made up of three parts
-  1. The variable identifier. This is how the user input is stored.
-  2. The function's name. This is always =input=.
-  3. A prompt. This can be any string you like.
-[[file:img/input.png]]
-** Code It
+- We started by assigning two variables to have integer values. Then we assigned a third variable (=numberEggs=) to be the result of multiplying (=*=) the previous variables together.
+** Try It
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: code
+:HTML_CONTAINER_CLASS: try
 :END:
-- Let's try a few uses of =input()=
-- We'll make a simple 6 line script.
-- Computers are pretty strict about the order in which they execute instructions, so they'll always start at the first line and run the lines in order.
+- Let's try another one.
+#+begin_quote
+A snake can slither 20cm in 15 minutes. How many hours would it take the snake to travel 100cm
+#+end_quote
 #+begin_src python
-name = input('What is your name? ')
-print('Hi there ' + name)
-pet = input('What type of pet do you have? ')
-print('Oh, I love ' + pet + 's')
-place = input('Where do you live? ')
-print("I've heard that " + place + ' is a horrible place to have ' + pet + 's')
+distance = 100
+speed = 20/15
+time = distance/speed
 #+end_src
 ** Badge It - Gold
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- Create a new script called =conversation.py=
-- Try to write your own script that let's you have a bit of a conversation with the computer
-- Try to use at least three or four =input()= and =print()= statements
-** Code It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: code
-:END:
-- Sometimes we want the user to enter numbers instead of strings.
-- With number we can do some calculations.
-- Let's write some code that doesn't quite work.
-- Create a new script called =Calc.py=
-#+begin_src python
-print('I am the Amazing Calculator, that can add any two numbers in an instant')
-firstNum = input('Give me my first number puny mortal ')
-secondNum = input('Now give me my second number, you fool ')
-answer = firstNum + secondNum
-print('The answer to your easy question is ' + answer)
-#+end_src
-- Run your code and see what happens.
-* Converting Types
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
-:END:
+- These ones are even trickier.
+  1. A woodchuck can chuck 5 bits of wood in an hour. How long does it take a woodchuck to chuck 45 pieces of wood.
+  2. A peck is equal to 9 litres. If Peter picked a peck of pickled peppers and each pepper has a volume of 0.25 litres, how many pickled peppers did Peter pick.
+  3. A cannibal can nibble 9 cans in an hour. How many cans can nine cannibals nibble in ninety minutes
 ** Learn It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- The /Amazing Calculator/ messed up the calculations
-- So what went wrong.
-- =input()= always turns what ever the user types in, into a string.
-- Just try the following in your =INTERPRETER=
+- We can easily assign variables to other variables.
 #+begin_src python
-10 + 10
-'10' + '10'
+foo = 10
+bar = foo
 #+end_src
-- When you tell the computer to add integers, it adds them together as you would expect.
-- If you tell the computer to add together strings (like '10') it =concatenates= them. This is a fancy word for joining together.
-- Now say the phrase =concatenation means joining together= twenty times to yourself, because it's going to come up a lot in the future.
-** Code It
+- Let's find out what =bar= is now.
+#+begin_src python
+bar
+#+end_src
+- As you probably expected, it is now 10.
+- But what happens if we change =foo=
+#+begin_src python
+foo = 5
+#+end_src
+- What's bar now?
+** Learn It
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: code
+:HTML_CONTAINER_CLASS: learn
 :END:
-- What we need to do is find a way to convert our strings to integers.
-- When we convert one type to another, it is called =Type Casting=
-- This is easy to do with some more inbuilt functions. In this case we're going to use the =int()= inbuilt function.
-- Try the following in the =INTERPRETER=
-#+begin_src python
-int('10') + int('10')
-#+end_src
-- Using =int()= we convert the string to an integer.
-- We can easily convert variables as well.
-#+begin_src python
-foo = '10'
-bar = '5'
-int(foo) + int(bar)
-#+end_src
-- Using this we can convert a users input, before it is even stored as a variable value.
-#+begin_src python
-num = int(input('Give me a number '))
-#+end_src
+- To see why =bar= stays at 10, we need to think about what happens when we use code like =bar = foo=. We'll talk in terms of a /sort of/ Turing Machine.
+- We start off with an empty tape and some empty cards.
+[[file:img/tape1.jpg]]
+- When we write =foo = 10= two things happen.
+  1. The value of 10 is stored on the tape in a certain box. In this case it is box number 4.
+  2. The card is then altered so it has the variable identifier and the box it points to.
+[[file:img/tape2.jpg]]
+- When we then write =bar = foo=, a second card is then used to indicate that =bar= points to the same box number as =foo=.
+[[file:img/tape3.jpg]]
+- Lastly, when we reassign =foo= the value of 5, a second box (in this case box 8) has 5 stored in it and =foo='s card is altered to now point to the new box.
+[[file:img/tape4.jpg]]
+- We can see that bar is still pointing to the value in address 4, which is the number 10.
 ** Badge It - Platinum
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- Use what you have learned to fix the 'Amazing Calculator'
-- Can you make another script that asks the user for 5 numbers and calculates the mean average of the numbers?
-
-#  LocalWords:  firstScript secondScript Calc firstNum secondNum
+- For each of the problems below - you may only use the variables stated in the problem. You can't use additional variables or values.
+- The first has been done for you as an example
+*** Example
+#+begin_src python
+foo = 10
+bar = 4
+baz = 0
+#+end_src
+- make =foo=, =bar= and =baz= all equal to 6.
+/Answer/
+#+begin_src python
+baz = foo - bar
+foo = baz
+bar = baz
+#+end_src
+*** Problem 1
+#+begin_src python
+foo = 10
+bar = 4
+#+end_src
+- Make =foo= and =bar= both equal to 6.
+*** Problem 2
+#+begin_src python
+foo = 10
+bar = 15
+baz = 3
+#+end_src
+- Make =foo= and =bar= both equal to 25 and =baz= equal to 22
+*** Problem 3
+#+begin_src python
+foo = 12
+bar = 3
+#+end_src
+- Make =foo= equal to 4 and =bar= equal to 12
+*** Problem 4
+#+begin_src python
+foo = 9
+bar = 4
+#+end_src
+- Make =foo= equal to 4 and =bar= equal to 9

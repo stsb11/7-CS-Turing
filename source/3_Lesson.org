@@ -91,7 +91,7 @@
 :HTML_CONTAINER_CLASS: save
 :END:
 
-* What is 'Conditional Selection'
+* Scripting in Python
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -99,70 +99,137 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- One of the important aspects of a Turing machine, is the ability to change the tape, depending on what was written on some programmed cards.
-- So, for instance, if the Turing machine was at box 500 on the tape, =if= the symbol written there was a 1 - it would move the tape forward, =else= if the symbol that was written there was a 0 the machine would move the tape backwards.
-** Learn It
+- Up until now you have been coding in the =INTERPRETER=
+- When Turing came up with the concept of his /Turing Machine/ he imagined that cards would be used where instructions could be written for the machine to act upon, depending upon what was written on the tape.
+- We want to use the Python equivalent of these cards.
+- We call these programs or scripts
+** Try It
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
+:HTML_CONTAINER_CLASS: try
 :END:
-- This is know as =Conditional Selection=.
-- If you want to imagine using =Conditional Selection= in real life, think about a simple decision you might make before leaving the house in the morning.
-#+begin_quote
-If it is cold I will take my coat, else I'll leave it at home.
-#+end_quote
+- Find and open IDLE again.
+- Now using your keyboard, hit =Ctrl= + =n= to make a new file.
+- A second window should open up that looks like this.
+[[file:img/script.png]]
+- At the moment it is /Untitled/ so we had best give it a name.
+- Hit =Ctrl= + =s= on your keyboard to save the file.
+- Give it the name =firstScript.py=
+- *Make sure you save it in a new directory, and not in the default chosen by IDLE.*
+- The =.py= file extension is important. It lets the Operating System know that the file needs to be run with Python, and not another application like Notepad.
+- With the =.py= extension, you'll also get help with the language syntax as key words will be coloured.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-
-- Let's try and code the above example using python.
-- Open IDLE and create a new script (=Ctrl+n=) called =coat.py=
-- We need to start by creating a variable to store whether it is cold or not.
-- On the first line of your script write the following line.
+- Let's write a simple script in our new window. If you see the keyword =SCRIPT= in this resource you know you should be writing in this window. If you see the keyword =INTERPRETER= you know you should be writing in the interpreter window.
 #+begin_src python
-coldOutside = True
+foo = 10
+bar = 12
+baz = foo + bar
 #+end_src
-- =True= is a keyword in Python.
-- Now we're going to start our conditional selection. Write this line next.
+- You need to save your file again =Ctrl= + =s= and then use the =F5= key to run the program.
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- You'll have noticed that nothing appears to happen.
+- Your program has actually run though, and your variables are stored in RAM.
+- Flick over into your =INTERPRETER= and try querying the variables.
 #+begin_src python
-if coldOutside == True:
+foo
+bar
+baz
 #+end_src
-- The double equals is known as a =test for equality=. In Python a single equals is used for assigning variables. A double equals tests if two things are the same.
-- The =:= is important. It tells the computer that we have finished stating the =condition=. In this case that =coldOutside = True=
-- Now hit =Enter= on your keyboard and stop.
-[[file:img/whitespace.png]]
-- The cursor has automatically been placed 4 spaces in, leaving what is known as =significant whitespace= where you are going to write your next line.
-- If you accidentally delete the whitespace (do it now), you can add it back in by using the =Tab= key on your keyboard.
-[[file:img/tab.jpg]]
-- Let's write the next line
+- You'll see the values displayed in the interpreter.
+* Printing
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- It's going to be annoying if we have to constantly jump into the interpreter to see what the values of our variables are.
+- To display data, most programming languages have a method of outputting data. In Python we use an inbuilt function called =print()=.
+- Make a second script called =secondScript.py= (=Ctrl+n= then =Ctrl+s=)
+- Write this in your =SCRIPT=
 #+begin_src python
-  if coldOutside == True:
-      print('You had better take your coat')
+print(Hello World!)
 #+end_src
-- Because the =print()= statement is written after the significant white space, it will only be executed if the line above it is =True=.
-- What happens if coldOutside isn't =True=?
-- We need to prepare for that as well.
+- Run the script and see what happens.
+- We get a =syntax error= because the Python Interpreter thinks that Hello is some sort of variable that we haven't created.
+- We need to make sure that it realises we're either printing strings, numbers or the values of variables
+- Try this instead
 #+begin_src python
-  if coldOutside == True:
-      print('You had better take your coat')
-  else:
-      print('Leave your coat at home')
+print('Hello World!')
 #+end_src
-- Notice that the =else:= has no whitespace before it.
-- The =print()= statement under the =else:= condition, only runs if =coldOutside= is not =True=
-- =Ctrl+s= and then =F5= to save and run your script.
-- Now try changing the variable =coldOutside= from =True= to =False=
+- Now we've put quotes around the words, we can run our script.
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- We can print almost anything we like. Try out the following little scripts.
+#+begin_src python
+foo = 'Hi I am foo'
+print(foo)
+#+end_src
+#+begin_src python
+bar = 6
+baz = 8
+print(baz-bar)
+#+end_src
+#+begin_src python
+qux = 100
+print("Now that's a lot of qux"*qux)
+#+end_src
+#+begin_src python
+foo = 'Hello'
+bar = ' '
+baz = 'World!'
+print(foo+bar+baz)
+#+end_src
 ** Badge It - Silver
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- Now it's your turn to write some conditional selection scripts. Make sure you use sensible variable names
-- Try the following:
-  1. Write a script that prints out whether you should have a snack based on whether you are hungry or not.
-  2. Write a script that prints out whether you should have a sleep or not based on whether you are tired or not.
-  3. Write a script that prints out whether you should take a bus or not based on whether your journey is a long one.
-
-* More tests
+- Using only the variables provided in each of the scripts below, create print statements that produce the displayed output.
+*** Set A
+#+begin_src python
+foo = 10
+bar = 5
+baz = 12 
+#+end_src
+*** Output 1
+#+begin_src python
+50
+#+end_src
+*** Output 2
+#+begin_src python
+6
+#+end_src
+*** Output 3
+#+begin_src python
+238
+#+end_src
+*** Set B
+#+begin_src python
+foo = 'Ba '
+bar = 'Black Sheep '
+baz = 10
+#+end_src
+*** Output 1
+#+begin_src python
+Ba Ba
+#+end_src
+*** Output 2
+#+begin_src python
+Ba Ba Black Sheep
+#+end_src
+*** Output 3
+#+begin_src python
+Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep 
+#+end_src
+* Gettin Input
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -170,63 +237,56 @@ if coldOutside == True:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- We can use conditional selection to test for pretty much anything, not just whether a variable is =True= or =False=.
-- We can test the value of any variable value we like.
+- Now that you've got the idea of printing, let's have a look at user input.
+- Sometime we'll want the user of our program to be able to set variable values. This is handled using the inbuilt =input()= function.
+- Here's an example of the use of =input()=
+#+begin_src python
+name = input('What is your name?)
+#+end_src
+- It is made up of three parts
+  1. The variable identifier. This is how the user input is stored.
+  2. The function's name. This is always =input=.
+  3. A prompt. This can be any string you like.
+[[file:img/input.png]]
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- Let's make a little chatbot.
+- Let's try a few uses of =input()=
+- We'll make a simple 6 line script.
+- Computers are pretty strict about the order in which they execute instructions, so they'll always start at the first line and run the lines in order.
 #+begin_src python
-  name = 'Alice'
-  if name == 'Alice':
-      print('Nice to meet you ' + name)
-  else:
-      print('I wanted to speak to Alice, not ' + name)
+name = input('What is your name? ')
+print('Hi there ' + name)
+pet = input('What type of pet do you have? ')
+print('Oh, I love ' + pet + 's')
+place = input('Where do you live? ')
+print("I've heard that " + place + ' is a horrible place to have ' + pet + 's')
 #+end_src
-- We can make this script a little more interactive by using =input()= like we did in the previous lesson
-#+begin_src python
-  name = input('Hi, what is your name? ')
-  if name == 'Alice':
-      print('Nice to meet you ' + name)
-  else:
-      print('I wanted to speak to Alice, not ' + name)
-#+end_src
-- You can change what the script replies if you like.
-- Let's extend it a little. Add a second block of conditional selection to your script, underneath the first.
-#+begin_src python
-  pets = input('Do you have any pets? ')
-  if pets == 'yes':
-      print("That's nice. I love pets")
-  else:
-      print("That's a shame. You should buy a dog")
-#+end_src
-- Add a few more questions and responses of your own, to extend the chatbot.
 ** Badge It - Gold
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- We can use Conditional Selection to make a quiz.
-- Have a look at the script below.
+- Create a new script called =conversation.py=
+- Try to write your own script that let's you have a bit of a conversation with the computer
+- Try to use at least three or four =input()= and =print()= statements
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- Sometimes we want the user to enter numbers instead of strings.
+- With number we can do some calculations.
+- Let's write some code that doesn't quite work.
+- Create a new script called =Calc.py=
 #+begin_src python
-  score = 0
-
-  userAnswer1 = input('What is the capital city of England?' )
-  if userAnswer1 == 'London':
-      print('Correct')
-      score = score + 1
-  else:
-      print('Incorrect')
+print('I am the Amazing Calculator, that can add any two numbers in an instant')
+firstNum = input('Give me my first number puny mortal ')
+secondNum = input('Now give me my second number, you fool ')
+answer = firstNum + secondNum
+print('The answer to your easy question is ' + answer)
 #+end_src
-- The first line creates a variable called =score= and sets it to 0
-- This line
-#+begin_src python
-score = score + 1
-#+end_src
-- adds 1 to the score. As it has whitespace before it, it only runs when the user gets the answer correct.
-- Add 9 more questions to your script.
-
-* Type Casting again
+- Run your code and see what happens.
+* Converting Types
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -234,38 +294,44 @@ score = score + 1
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- It would be nice if we could print out the score at the end of the quiz.
-- There's a slight problem though.
-- Try this as the last line of code.
+- The /Amazing Calculator/ messed up the calculations
+- So what went wrong.
+- =input()= always turns what ever the user types in, into a string.
+- Just try the following in your =INTERPRETER=
 #+begin_src python
-print('You scored ' + score)
+10 + 10
+'10' + '10'
 #+end_src
-- Run through the quiz and see what happens.
-- The problem is the same as we experienced in the last lesson. The string ='You scored '= and the integer =score= are different types, and you can't =concatenate= different types in Python (Do you still remember what =concatenate= means).
-- This time we'll use the inbuilt function =str()=.
-- This converts numbers to strings. So if the score was =6= it would convert it to '6'
-- Change your last line of code so it looks like the one below.
-#+begin_src python
-print('You scored ' + str(score))
-#+end_src
+- When you tell the computer to add integers, it adds them together as you would expect.
+- If you tell the computer to add together strings (like '10') it =concatenates= them. This is a fancy word for joining together.
+- Now say the phrase =concatenation means joining together= twenty times to yourself, because it's going to come up a lot in the future.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- Can you remember how to use int() to change a user's input into a number.
-- We could add some Maths questions to our script by using int()
-- Here's an example question, and the beauty of it is that we don't have to work out the answer ourselves.
+- What we need to do is find a way to convert our strings to integers.
+- When we convert one type to another, it is called =Type Casting=
+- This is easy to do with some more inbuilt functions. In this case we're going to use the =int()= inbuilt function.
+- Try the following in the =INTERPRETER=
 #+begin_src python
-answer6 = int(input('What is 7 multiplied by 8? '))
-if answer6 == 7*8:
-    print('Correct')
-    score = score + 1
-else:
-    print('Incorrect')
+int('10') + int('10')
+#+end_src
+- Using =int()= we convert the string to an integer.
+- We can easily convert variables as well.
+#+begin_src python
+foo = '10'
+bar = '5'
+int(foo) + int(bar)
+#+end_src
+- Using this we can convert a users input, before it is even stored as a variable value.
+#+begin_src python
+num = int(input('Give me a number '))
 #+end_src
 ** Badge It - Platinum
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- Now try adding 3 simple Maths questions to the quiz (addition, multiplication, subtraction or division (+,*,-,/))
-- Add another question 3 questions that asks the user to answer the same questions you answered for the[[file:1_Lesson.html][ The Gold Badge on Week 1]].
+- Use what you have learned to fix the 'Amazing Calculator'
+- Can you make another script that asks the user for 5 numbers and calculates the mean average of the numbers?
+
+#  LocalWords:  firstScript secondScript Calc firstNum secondNum

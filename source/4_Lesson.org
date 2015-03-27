@@ -91,7 +91,7 @@
 :HTML_CONTAINER_CLASS: save
 :END:
 
-* More Conditionals
+* What is 'Conditional Selection'
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -99,44 +99,70 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- There's actually a lot more that we can do with Conditional Selection.
-- There is another keyword called =elif= that means /else if/
-- This is useful if we are testing for multiple conditions.
-- In lesson 3 we used an example of it being cold outside. But *cold* or *not cold* is a =binary= choice, meaning there are only two choices.
-- We could have a range of descriptions of the temperature outside - *cold*, *mild*, *warm* or *hot* for example.
-- /if/ it's cold you'll need a coat, /else if/ it's mild you go out, /else if/ it's warm you take off your jumper, /else/ you put on some shorts.
+- One of the important aspects of a Turing machine, is the ability to change the tape, depending on what was written on some programmed cards.
+- So, for instance, if the Turing machine was at box 500 on the tape, =if= the symbol written there was a 1 - it would move the tape forward, =else= if the symbol that was written there was a 0 the machine would move the tape backwards.
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- This is know as =Conditional Selection=.
+- If you want to imagine using =Conditional Selection= in real life, think about a simple decision you might make before leaving the house in the morning.
+#+begin_quote
+If it is cold I will take my coat, else I'll leave it at home.
+#+end_quote
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- Let's try and code that up.
-- Create a new script called =weatherChecker.py=
+
+- Let's try and code the above example using python.
+- Open IDLE and create a new script (=Ctrl+n=) called =coat.py=
+- We need to start by creating a variable to store whether it is cold or not.
+- On the first line of your script write the following line.
 #+begin_src python
-  temperature = input('What is it like outside? ')
-  if temperature == 'cold':
-      print('Better take a coat')
-  elif temperature == 'mild':
-      print('You can just go out')
-  elif temperature == 'warm':
-      print('You had better take off your jumper')
-  else:
-      print('You had better put on some shorts')
+coldOutside = True
 #+end_src
-** Try It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: try
-:END:
-- Can you extend the script for more temperature options - *freezing*, *chilly*, *tropical* for instance?
-- Try adding on a another block of conditional selection that asks about the time of day - *morning*, *afternoon*, *evening* perhaps, and advises on whether the user has eaten their *breakfast*, *lunch* or *tea* before they go out.
+- =True= is a keyword in Python.
+- Now we're going to start our conditional selection. Write this line next.
+#+begin_src python
+if coldOutside == True:
+#+end_src
+- The double equals is known as a =test for equality=. In Python a single equals is used for assigning variables. A double equals tests if two things are the same.
+- The =:= is important. It tells the computer that we have finished stating the =condition=. In this case that =coldOutside = True=
+- Now hit =Enter= on your keyboard and stop.
+[[file:img/whitespace.png]]
+- The cursor has automatically been placed 4 spaces in, leaving what is known as =significant whitespace= where you are going to write your next line.
+- If you accidentally delete the whitespace (do it now), you can add it back in by using the =Tab= key on your keyboard.
+[[file:img/tab.jpg]]
+- Let's write the next line
+#+begin_src python
+  if coldOutside == True:
+      print('You had better take your coat')
+#+end_src
+- Because the =print()= statement is written after the significant white space, it will only be executed if the line above it is =True=.
+- What happens if coldOutside isn't =True=?
+- We need to prepare for that as well.
+#+begin_src python
+  if coldOutside == True:
+      print('You had better take your coat')
+  else:
+      print('Leave your coat at home')
+#+end_src
+- Notice that the =else:= has no whitespace before it.
+- The =print()= statement under the =else:= condition, only runs if =coldOutside= is not =True=
+- =Ctrl+s= and then =F5= to save and run your script.
+- Now try changing the variable =coldOutside= from =True= to =False=
 ** Badge It - Silver
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- Choose 4 friends in the class.
-- Create a script that asks for the user to type in their name.
-- If the name provided matches one of your friend's names then it should give a nice response.
-- If it does not match your friend's names then it should produce a *mild* insult.
-* More Operators
+- Now it's your turn to write some conditional selection scripts. Make sure you use sensible variable names
+- Try the following:
+  1. Write a script that prints out whether you should have a snack based on whether you are hungry or not.
+  2. Write a script that prints out whether you should have a sleep or not based on whether you are tired or not.
+  3. Write a script that prints out whether you should take a bus or not based on whether your journey is a long one.
+
+* More tests
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -144,44 +170,63 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- You already know that a double equals is used to test for =equality=, whether something is equal or not.
-- There are other tests we can perform though.
-- Look at the table below.
-| Comparison Operator | Description                                              | Example                              |
-|---------------------+----------------------------------------------------------+--------------------------------------|
-| ==                  | Tests if two things are equal                            | 6 == 6 is True                       |
-| !=                  | Tests if two things are *not* equal                      | 4 != 6 is True                       |
-| <                   | Tests if one thing is less than another                  | 3 <  10 is True                      |
-| >                   | Tests if one thing is greater than another               | 10 > 3 is True                       |
-| <=                  | Tests if one thing is less than *or* equal to another    | 10 <= 10 is True and 9 <= 10 is True |
-| >=                  | Tests if one thing is greater than *or* equal to another | 5 >= 5 is True and 5 >= 3 is True    |
-
+- We can use conditional selection to test for pretty much anything, not just whether a variable is =True= or =False=.
+- We can test the value of any variable value we like.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- So how can we use this?
-- Let's try and make a little script that insults people based on their age.
-- Make a new script (=Ctrl+n=) and call it =ageist.py=
+- Let's make a little chatbot.
 #+begin_src python
-  age = int(input('How old are you? '))
-  if age <= 10:
-      print('You are just a tiny baby.')
-  elif age <= 12:
-      print('You are cool')
-  elif age <= 30:
-      print('You are getting on a bit')
+  name = 'Alice'
+  if name == 'Alice':
+      print('Nice to meet you ' + name)
   else:
-      print('Oh no, sorry but you are ancient')
+      print('I wanted to speak to Alice, not ' + name)
 #+end_src
+- We can make this script a little more interactive by using =input()= like we did in the previous lesson
+#+begin_src python
+  name = input('Hi, what is your name? ')
+  if name == 'Alice':
+      print('Nice to meet you ' + name)
+  else:
+      print('I wanted to speak to Alice, not ' + name)
+#+end_src
+- You can change what the script replies if you like.
+- Let's extend it a little. Add a second block of conditional selection to your script, underneath the first.
+#+begin_src python
+  pets = input('Do you have any pets? ')
+  if pets == 'yes':
+      print("That's nice. I love pets")
+  else:
+      print("That's a shame. You should buy a dog")
+#+end_src
+- Add a few more questions and responses of your own, to extend the chatbot.
 ** Badge It - Gold
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-1. Write a script that asks the user when Alan Turing dies. If they get it right, it should congratulate them. If they're too early or late, it should tell them.
-2. Write a script that asks the user for the to calculate the sum of two numbers, and tells them if they're too high, too low or correct.
-3. Write a script that asks the user where Alan Turing worked during World War II. If they /don't/ get it right it should tell them so. Otherwise it should congratulate them.
-* Nesting Conditionals
+- We can use Conditional Selection to make a quiz.
+- Have a look at the script below.
+#+begin_src python
+  score = 0
+
+  userAnswer1 = input('What is the capital city of England?' )
+  if userAnswer1 == 'London':
+      print('Correct')
+      score = score + 1
+  else:
+      print('Incorrect')
+#+end_src
+- The first line creates a variable called =score= and sets it to 0
+- This line
+#+begin_src python
+score = score + 1
+#+end_src
+- adds 1 to the score. As it has whitespace before it, it only runs when the user gets the answer correct.
+- Add 9 more questions to your script.
+
+* Type Casting again
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -189,48 +234,38 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- Sometimes in our scripts, we want to be able to make multiple branches.
-- If an outcome depends on two different conditions we can /nest/ our if statements.
+- It would be nice if we could print out the score at the end of the quiz.
+- There's a slight problem though.
+- Try this as the last line of code.
+#+begin_src python
+print('You scored ' + score)
+#+end_src
+- Run through the quiz and see what happens.
+- The problem is the same as we experienced in the last lesson. The string ='You scored '= and the integer =score= are different types, and you can't =concatenate= different types in Python (Do you still remember what =concatenate= means).
+- This time we'll use the inbuilt function =str()=.
+- This converts numbers to strings. So if the score was =6= it would convert it to '6'
+- Change your last line of code so it looks like the one below.
+#+begin_src python
+print('You scored ' + str(score))
+#+end_src
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- The script below makes a start at producing an automatic horoscope predictor.
-- Your star sign depends on both the month and day you were born, so we need to use nested =if= statements.
+- Can you remember how to use int() to change a user's input into a number.
+- We could add some Maths questions to our script by using int()
+- Here's an example question, and the beauty of it is that we don't have to work out the answer ourselves.
 #+begin_src python
-  month = input('What month were you born in? ')
-  day = int(input('What day of the month were you born? '))
-  if month == 'January':
-      if day > 19:
-          print('You are an Aquarius')
-          print('You will live a long life')
-      else:
-          print('You are a Capricorn')
-          print('You will live a long life')
-  elif month == 'February':
-      if day > 19:
-          print('You are a Pisces')
-          print('You will live a long life')
-      else:
-          print('You are an Aquarius')
-          print('You will live a long life')
-          
+answer6 = int(input('What is 7 multiplied by 8? '))
+if answer6 == 7*8:
+    print('Correct')
+    score = score + 1
+else:
+    print('Incorrect')
 #+end_src
-- Finish of the script so that it works for any day of the year.
--[[http://gintama.wikia.com/wiki/Birthdates_%2526_Zodiac_Signs][ This website might help]]
-** Learn It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
-:END:
-- There's no reason why you can't have further nesting if you need it.
-- However, the more nesting you have, the more difficult your script will be to read and debug if you have an error.
 ** Badge It - Platinum
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- The lessons you go to each day are dependent on three variables.
-  - The Current Week (Week 1 or Week 2)
-  - The Current Day (Monday - Friday)
-  - The Current Period (1-5)
-- Create a script that will report back which lesson you should be in, dependent on how you answer three questions regarding the Week, Day and Period.
-
+- Now try adding 3 simple Maths questions to the quiz (addition, multiplication, subtraction or division (+,*,-,/))
+- Add another question 3 questions that asks the user to answer the same questions you answered for the[[file:1_Lesson.html][ The Gold Badge on Week 1]].

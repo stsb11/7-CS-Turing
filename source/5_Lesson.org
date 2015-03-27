@@ -91,7 +91,7 @@
 :HTML_CONTAINER_CLASS: save
 :END:
 
-* Looping
+* More Conditionals
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -99,67 +99,54 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- At the moment our scripts have run in one direction - /Top/ to /Bottom/.
-- Even though we've used branches (with =if=, =elif= and =else=), the branches still run from top to bottom.
-- When Turing devised his /Turing Machine/ he imagined that the machine would be able to move forwards and backwards along the tape.
-- This would mean that the machine could end up reading the same section of tape, multiple times. This would be a loop.
-** Learn It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
-:END:
-- In Python we can use what is known as a =while= loop.
-- Thinking back to our earlier examples of deciding what to do depending upon the weather is like outside; you might say something along the lines of...
-#+begin_quote
-While it is raining outside, I am staying indoor.
-#+end_quote.
-- In Python this would look something like;
-#+begin_src python
-  while raining == True:
-      print('I am staying indoors')
-#+end_src
-- Notice that we need to use that same =:= on the end of the condition.
-- We also need that /significant whitespace/ before any code that is supposed to run /inside/ the loop.
+- There's actually a lot more that we can do with Conditional Selection.
+- There is another keyword called =elif= that means /else if/
+- This is useful if we are testing for multiple conditions.
+- In lesson 3 we used an example of it being cold outside. But *cold* or *not cold* is a =binary= choice, meaning there are only two choices.
+- We could have a range of descriptions of the temperature outside - *cold*, *mild*, *warm* or *hot* for example.
+- /if/ it's cold you'll need a coat, /else if/ it's mild you go out, /else if/ it's warm you take off your jumper, /else/ you put on some shorts.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- Let's start by trying a version of the example above, but add a little user input into the code.
+- Let's try and code that up.
+- Create a new script called =weatherChecker.py=
 #+begin_src python
-  raining = input('Is it raining outside ')
-  while raining == 'yes':
-      print('You had best stay indoors')
-  print('You can go outside')
+  temperature = input('What is it like outside? ')
+  if temperature == 'cold':
+      print('Better take a coat')
+  elif temperature == 'mild':
+      print('You can just go out')
+  elif temperature == 'warm':
+      print('You had better take off your jumper')
+  else:
+      print('You had better put on some shorts')
 #+end_src
-- Run your code and see what happens, when you type 'no'
-- As =raining= does not equal 'yes', the computer does not enter the while loop, so the lines are skipped to the next line with no whitespace.
-- Run it again, and this time type 'yes'.
-- Is there a problem?
-- You can quit a running program by using the shortcut =Ctrl+c=
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- Can you extend the script for more temperature options - *freezing*, *chilly*, *tropical* for instance?
+- Try adding on a another block of conditional selection that asks about the time of day - *morning*, *afternoon*, *evening* perhaps, and advises on whether the user has eaten their *breakfast*, *lunch* or *tea* before they go out.
+** Badge It - Silver
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- Choose 4 friends in the class.
+- Create a script that asks for the user to type in their name.
+- If the name provided matches one of your friend's names then it should give a nice response.
+- If it does not match your friend's names then it should produce a *mild* insult.
+* More Operators
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
 ** Learn It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- You've just experienced your first infinite loop.
-- This is when a program runs and runs and never ends.
-- The problem was that once we had set the variable =raining= to 'yes' there was no way to change it. =raining= was always going to be 'yes.
-** Code It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: code
-:END:
-- We can alter our code to allow changing of the variable though.
-#+begin_src python
-  raining = input('Is it raining outside ')
-  while raining == 'yes':
-      print('You had best stay indoors')
-      raining = input('Is it raining outside ')
-  print('You can go outside')
-#+end_src
-- Now run the code and see what happens.
-** Learn It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
-:END:
-- We can use the same /Comparison Operators/ for a =while= loop that we used for conditionals.
+- You already know that a double equals is used to test for =equality=, whether something is equal or not.
+- There are other tests we can perform though.
+- Look at the table below.
 | Comparison Operator | Description                                              | Example                              |
 |---------------------+----------------------------------------------------------+--------------------------------------|
 | ==                  | Tests if two things are equal                            | 6 == 6 is True                       |
@@ -168,59 +155,33 @@ While it is raining outside, I am staying indoor.
 | >                   | Tests if one thing is greater than another               | 10 > 3 is True                       |
 | <=                  | Tests if one thing is less than *or* equal to another    | 10 <= 10 is True and 9 <= 10 is True |
 | >=                  | Tests if one thing is greater than *or* equal to another | 5 >= 5 is True and 5 >= 3 is True    |
+
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- We can use a =while= loop to make a password authentication program.
-- This time we'll use the ==!= comparison (not equal to)
+- So how can we use this?
+- Let's try and make a little script that insults people based on their age.
+- Make a new script (=Ctrl+n=) and call it =ageist.py=
 #+begin_src python
-  password = 'correct horse battery staple'
-  attempt = input('Please enter a password ')
-  while attempt != password:
-      print('Access denied')
-      attempt = input('Please enter a password ')
-  print('Access granted.)
+  age = int(input('How old are you? '))
+  if age <= 10:
+      print('You are just a tiny baby.')
+  elif age <= 12:
+      print('You are cool')
+  elif age <= 30:
+      print('You are getting on a bit')
+  else:
+      print('Oh no, sorry but you are ancient')
 #+end_src
-** Badge It - Silver
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: badge
-:END:
-- Try and write a script that asks the user to answer a simple sum.
-- If they get it right, they should be congratulated
-- If they get it wrong they should be asked the question again.
-- Don't forget to type cast the user input.
-* Counting
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
-:END:
-** Learn It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
-:END:
-- One of the simplest tasks we can get a computer to do is to count.
-- When you count to 100, you start at 1 and then keep adding on 1 until you get to 100.
-- Let's code this with a =while= loop.
-** Code It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: code
-:END:
-#+begin_src python
-  count = 1
-  while count <= 100:
-      print(count)
-      count = count + 1
-#+end_src
-- Can you alter the code so that the computer counts to 10000
-- Alter it so that it counts in 2s, then 10s
 ** Badge It - Gold
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- Create a while loop that counts down from 100 to 0.
-- Create a while loop that prints out 1, and then doubles it, printing out the answer each time until it reaches 1,000,000
-- Create a while loop that prints out *Computing is Grrrreat* a thousand times.
-* Singing
+1. Write a script that asks the user when Alan Turing dies. If they get it right, it should congratulate them. If they're too early or late, it should tell them.
+2. Write a script that asks the user for the to calculate the sum of two numbers, and tells them if they're too high, too low or correct.
+3. Write a script that asks the user where Alan Turing worked during World War II. If they /don't/ get it right it should tell them so. Otherwise it should congratulate them.
+* Nesting Conditionals
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -228,38 +189,48 @@ While it is raining outside, I am staying indoor.
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- There are lots of counting songs that children use to learn to count:
-  - 5 Little Ducks went swimming one day
-  - 5 Currant Buns in a baker's shop
-  - 5 Little Speckled Frogs
-  - 5 Little Monkeys
-  - 5 Red Apples
-- If you don't know the lyrics, you can listen to some of them[[http://www.bbc.co.uk/schoolradio/subjects/mathematics/countingsongs][ here]].
+- Sometimes in our scripts, we want to be able to make multiple branches.
+- If an outcome depends on two different conditions we can /nest/ our if statements.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- Writing out the lyrics to a simple counting song wouldn't take too long.
-- You could probably write out the lyrics to 10 Green Bottles fairly quickly
-#+begin_html
-<iframe width="420" height="315" src="https://www.youtube.com/embed/Ak7kedzR8bg" frameborder="0" allowfullscreen></iframe>
-#+end_html
-- But what if I asked you to write out the lyrics to 1000 green bottles.
-- Have a look at the script below.
+- The script below makes a start at producing an automatic horoscope predictor.
+- Your star sign depends on both the month and day you were born, so we need to use nested =if= statements.
 #+begin_src python
-bottles = 1000
-while bottles > 0:
-    print(str(bottles) + ' green bottles sitting on the wall')
-    print(str(bottles) + ' green bottles sitting on the wall')
-    print('And if one green bottle should accidently fall')
-    bottles = bottles -1
-    print("There'll be " + str(bottles) + ' green bottles, sitting on the wall')
+  month = input('What month were you born in? ')
+  day = int(input('What day of the month were you born? '))
+  if month == 'January':
+      if day > 19:
+          print('You are an Aquarius')
+          print('You will live a long life')
+      else:
+          print('You are a Capricorn')
+          print('You will live a long life')
+  elif month == 'February':
+      if day > 19:
+          print('You are a Pisces')
+          print('You will live a long life')
+      else:
+          print('You are an Aquarius')
+          print('You will live a long life')
+          
 #+end_src
-- Copy and paste the code into a new script and run it. You can change the bottles variable to anything you like.
+- Finish of the script so that it works for any day of the year.
+-[[http://gintama.wikia.com/wiki/Birthdates_%2526_Zodiac_Signs][ This website might help]]
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- There's no reason why you can't have further nesting if you need it.
+- However, the more nesting you have, the more difficult your script will be to read and debug if you have an error.
 ** Badge It - Platinum
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- Try and create a script to write out the lyrics of one of the songs listed above.
-- Use a variable to keep track of the numbers of Frogs, Buns or Ducks, and a while loop to change them.
+- The lessons you go to each day are dependent on three variables.
+  - The Current Week (Week 1 or Week 2)
+  - The Current Day (Monday - Friday)
+  - The Current Period (1-5)
+- Create a script that will report back which lesson you should be in, dependent on how you answer three questions regarding the Week, Day and Period.
 
