@@ -1,11 +1,9 @@
-bottles = 10
-while bottles > 0:
-    print(str(bottles) + ' green bottles sitting on the wall')
-    print(str(bottles) + ' green bottles sitting on the wall')
-    print('And if one green bottle should accidently fall')
-    bottles = bottles -1
-    print("There'll be " + str(bottles) + ' green bottles, sitting on the wall')
-    
+prime = False
+number = input('Give me a number')
 
-
-    
+while prime == False:
+    divisor = number -1
+    while divisor > 1:
+        if prime % divisor != 0:
+            divisor = divisor - 1
+        
