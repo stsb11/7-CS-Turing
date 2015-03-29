@@ -22,6 +22,7 @@
       <li><a href="4_Lesson.html">Week4</a></li>
       <li><a href="5_Lesson.html">Week5</a></li>
       <li><a href="6_Lesson.html">Week6</a></li>
+      <li><a href="7_Lesson.html">Week7</a></li>
       <li><a href="assessment.html">Assessment</a></li>
 
     </ul>
@@ -124,9 +125,10 @@ A chicken can lay a single egg, every day. If a chicken lives for seven years, w
 #+begin_src python
 daysInYear = 365
 lifeTime = 7
-numberEggs = daysInYear * lifeTime
+eggsPerDay = 1
+numberEggs = daysInYear * eggsPerDay * lifeTime 
 #+end_src
-- We started by assigning two variables to have integer values. Then we assigned a third variable (=numberEggs=) to be the result of multiplying (=*=) the previous variables together.
+- We started by assigning three variables to have integer values. Then we assigned a third variable (=numberEggs=) to be the result of multiplying (=*=) the previous variables together.
 ** Try It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try

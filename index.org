@@ -45,7 +45,4 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[file:pages/resources.html][Resources]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:      
+

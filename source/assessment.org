@@ -22,12 +22,12 @@
       <li><a href="4_Lesson.html">Week4</a></li>
       <li><a href="5_Lesson.html">Week5</a></li>
       <li><a href="6_Lesson.html">Week6</a></li>
+      <li><a href="7_Lesson.html">Week7</a></li>
       <li><a href="assessment.html">Assessment</a></li>
 
     </ul>
   </div>
 #+END_HTML
-
 * COMMENT Use as a template
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -103,11 +103,10 @@
 | <40>                                     | <40>                                     | <40>                                     | <40>                                     |
 | Criteria                                 | Silver                                   | Gold                                     | Platinum                                 |
 |------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------|
-| Random Number Generation                 | Explain how computers produce random numbers | Explain how environmental factors can help to produce pseudorandom numbers |                                          |
-| Pull Down Resistors                      | Understand the need for a voltage regulator | Understand the causes of a floating pin and how it is resolved | Demonstrate a floating pin on a breadboard |
-| Programming a Die                        | Understand the physical layout of the pins on a GENIE chip | Program a digital die                    | Program a digital die without using the built in random number generator |
-| Soldering                                | Solder your componenets neatly to the board | Add neat flying wires to attach your LEDs | Upload and run your program              |
-| Housing Assembly                         | Assemble your digital die board into a housing |                                          |                                          |
-| Cheating                                 |                                          |                                          | Write a program that enables you to fix the die roles. |
-
-
+| What'ssssss in a name                    | Assign values to variable                | Understand some basic data types         | Perform simple calculations              |
+| Slithering Sums                          | Perform simple calculations              | Perform more complex calculations using variables | Manipulate variable values               |
+| Snaking out and in                       | Use simple Print statements              | Create a simple chat bot                 | Create a basic calculator                |
+| =if= I see a snake - 'RUN'               | Use simple conditional selection         | Create a basic Quiz                      | Use Maths in a Quiz                      |
+| =elif= it's harmless - 'relax'           | Respond to multiple user inputs          | Using comparison operators               | Create your own timetable                |
+| Easting its own tail                     | Questioning within a loop                | Counting with while loops                | Create counting song lyrics              |
+| When will this end?                      | Using comments in code                   | Finding Square Roots                     | The Halting Problem                      |

@@ -22,6 +22,7 @@
       <li><a href="4_Lesson.html">Week4</a></li>
       <li><a href="5_Lesson.html">Week5</a></li>
       <li><a href="6_Lesson.html">Week6</a></li>
+      <li><a href="7_Lesson.html">Week7</a></li>
       <li><a href="assessment.html">Assessment</a></li>
 
     </ul>
@@ -111,7 +112,7 @@
 - Thinking back to our earlier examples of deciding what to do depending upon the weather is like outside; you might say something along the lines of...
 #+begin_quote
 While it is raining outside, I am staying indoor.
-#+end_quote.
+#+end_quote
 - In Python this would look something like;
 #+begin_src python
   while raining == True:

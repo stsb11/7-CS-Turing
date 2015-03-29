@@ -22,6 +22,7 @@
       <li><a href="4_Lesson.html">Week4</a></li>
       <li><a href="5_Lesson.html">Week5</a></li>
       <li><a href="6_Lesson.html">Week6</a></li>
+      <li><a href="7_Lesson.html">Week7</a></li>
       <li><a href="assessment.html">Assessment</a></li>
 
     </ul>
@@ -101,7 +102,7 @@
 :END:
 - By combining while loops and conditional selection we can become /Turing Complete/.
 - That means we can write programs that can solve any problem a /Turing Machine/ can solve.
-- As /Turing Machines/ can solve any calculable problem, that means we'll be able to write programs that can solve any calculable problem.
+- As /Turing Machines/ can solve any computable problem, that means we'll be able to write programs that can solve any computable problem.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
@@ -182,7 +183,7 @@
 #+begin_src python
 number = 7 #Assign the value 7 to the variable number
 #+end_src
-* Solving Calculable problems
+* Solving Computable problems
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -190,14 +191,14 @@ number = 7 #Assign the value 7 to the variable number
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- A /Turing Machine/ can solve any problem that is calculable.
+- A /Turing Machine/ can solve any problem that is computable.
 - Up to now, your scripts have been fairly simple, and not accomplished any real useful work.
 - Let's try and make something useful
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- Square roots of a number are pretty hard to find.
+- Finding square roots of a number are pretty hard.
 - There are some special formulas you can use to calculate a square root, but we're going to harness the power and speed of a computer in our algorithm.
 - Let's say we wanted to find the square root of =16129=
 - What we need to know is which number, when multiplied by itself, equals =16129=
@@ -247,8 +248,8 @@ False
 :HTML_CONTAINER_CLASS: learn
 :END:
 - We all have problems, and we're all very busy.
-- Computers can perform calculations so quickly, that they can solve problems billions of times faster than a human ever could.
-- The problem has to be a =calculable= one though.
+- Computers can perform calculations so quickly, that they can solve problems billions of times faster than a human ever could. So even if we have problems to solve that would take us too much time, we can get a computer to do it for us.
+- The problem has to be a =computable= one though.
 - Too often people believe that computers can solve any problem...
 [[http://imgs.xkcd.com/comics/tasks.png]]
 ** Learn It
@@ -263,7 +264,7 @@ False
       print('Does this program halt?')
       print('\n'*3)
 #+end_src
-- Infinite loops are a problem in designing programs. Have you ever had an application that just freezes you are forced to kill it?
+- Infinite loops are a problem in designing programs. Have you ever had an application that just freezes until you are forced to kill it?
 
 [[https://cdn2.scratch.mit.edu/get_image/user/4491013_60x60.png]]
 

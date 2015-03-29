@@ -22,6 +22,7 @@
       <li><a href="4_Lesson.html">Week4</a></li>
       <li><a href="5_Lesson.html">Week5</a></li>
       <li><a href="6_Lesson.html">Week6</a></li>
+      <li><a href="7_Lesson.html">Week7</a></li>
       <li><a href="assessment.html">Assessment</a></li>
 
     </ul>
@@ -134,7 +135,7 @@
 :END:
 - One of Turing's key ideas was an infinitely long tape, upon which symbols could be added, read and changed.
 - In modern computers this tape is called RAM, and is made up of very complex circuits.
-- Just like in a Turning machine though, we can add data to RAM, read data from RAM and change data in RAM.** Program It
+- Just like in a Turning machine though, we can add data to RAM, read data from RAM and change data in RAM.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
@@ -152,7 +153,7 @@ myName = 'Alice'
 :HTML_CONTAINER_CLASS: try
 :END:
 - Turing's original idea called for an infinitely long tape, that we could store an infinite amount of information on.
-- RAM is pretty big, if not infinite. A typical Computer might have anywhere between 2Gb and 16Gb or RAM.
+- RAM is pretty big, even if it's not infinite. A typical Computer might have anywhere between 2Gb and 16Gb or RAM.
 - This would be enough space to store between 1000000000 and 4000000000 characters, which is enough for us.
 - Try creating some variables for your friend's names. Each one must have it's own unique /identifier/ though
 #+begin_src python
@@ -227,15 +228,15 @@ bar = 3.142
 baz = 'Hello World!'
 qux = True 
 #+end_src
-- Now, for each of the variables, find out it's type.
+- Now, for each of the variables, you can find out it's type using the =type()= inbuilt function.
 #+begin_src python
 type(foo)
 #+end_src
 - The interpreter will tell you the class of the variable.
 #+begin_src python
-<class 'dict'>
+<class 'int'>
 #+end_src
-- This would tell me that the data-type was a =dict=.
+- This would tell me that the data-type was an =int=, which is short for /integer/.
 - Look up each of the data-types for the variables above and then use the web to find out what they each mean (in simple English).
 * Calculations in Python
 :PROPERTIES:
@@ -252,14 +253,16 @@ type(foo)
 #+end_src
 - In Python we can use =+= and =-= for addition and subtraction, =/= and =*= for division and multiplication.
 - There are lots of mathematical =operators= we can use. Here is a table of all of them for reference later on.
+- In the examples below =a = 10= and =b = 20=
 | Operator | Description                                           | Example                                         |
 |----------+-------------------------------------------------------+-------------------------------------------------|
-| +        | Addition - Adds values on either side of the operator | a + b will give 30                              |
-| *        | Multiplication                                        | a * b will give 200                             |
-| /        | Division                                              | b / a will give 2                               |
-| %        | Modulus - *remainder* of a division                   | b % a will give 0                               |
-| **       | To the power of                                       | a**b will give 10 to the power 20               |
-| //       | Division and round down                               | 9//2 is equal to 4 and 9.0//2.0 is equal to 4.0 |
+| =+=      | Addition - Adds values on either side of the operator | a + b will give 30                              |
+| =-=      | Subtraction                                           | b - a will give 10                              |
+| =*=      | Multiplication                                        | a * b will give 200                             |
+| =/=      | Division                                              | b / a will give 2                               |
+| =%=      | Modulus - *remainder* of a division                   | b % a will give 0                               |
+| =**=     | To the power of                                       | a**b will give 10 to the power 20               |
+| =//=     | Division and round down                               | 9//2 is equal to 4 and 9.0//2.0 is equal to 4.0 |
 - We can also use brackets, like you would do in maths.
 #+begin_src python
 (24+1)*4
@@ -268,8 +271,8 @@ type(foo)
 - Use Python to find the answers to the following questions.
   1. 1929 x 64
   2. 39483 ÷ 321
-  3. The remainder when 123 ÷
+  3. The remainder when 123 is divided by 2
   4. 1234 raised to the power of 4
-  5. What is 15% of 50
+  5. What is 15% of 50 (remember that % in Python is modulus and not percent)
 
 

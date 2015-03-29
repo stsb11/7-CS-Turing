@@ -153,6 +153,7 @@ for the JavaScript code in this tag.
       <li><a href="4_Lesson.html">Week4</a></li>
       <li><a href="5_Lesson.html">Week5</a></li>
       <li><a href="6_Lesson.html">Week6</a></li>
+      <li><a href="7_Lesson.html">Week7</a></li>
       <li><a href="assessment.html">Assessment</a></li>
 
     </ul>
@@ -237,7 +238,7 @@ for the JavaScript code in this tag.
 </li>
 <li>In modern computers this tape is called RAM, and is made up of very complex circuits.
 </li>
-<li>Just like in a Turning machine though, we can add data to RAM, read data from RAM and change data in RAM.** Program It
+<li>Just like in a Turning machine though, we can add data to RAM, read data from RAM and change data in RAM.
 </li>
 </ul>
 </div>
@@ -273,7 +274,7 @@ for the JavaScript code in this tag.
 <ul class="org-ul">
 <li>Turing's original idea called for an infinitely long tape, that we could store an infinite amount of information on.
 </li>
-<li>RAM is pretty big, if not infinite. A typical Computer might have anywhere between 2Gb and 16Gb or RAM.
+<li>RAM is pretty big, even if it's not infinite. A typical Computer might have anywhere between 2Gb and 16Gb or RAM.
 </li>
 <li>This would be enough space to store between 1000000000 and 4000000000 characters, which is enough for us.
 </li>
@@ -408,7 +409,7 @@ secondFriendName
 </pre>
 </div>
 <ul class="org-ul">
-<li>Now, for each of the variables, find out it's type.
+<li>Now, for each of the variables, you can find out it's type using the <code>type()</code> inbuilt function.
 </li>
 </ul>
 <div class="org-src-container">
@@ -422,11 +423,11 @@ secondFriendName
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python">&lt;<span style="color: #859900;">class</span> <span style="color: #2aa198;">'dict'</span>&gt;
+<pre class="src src-python">&lt;<span style="color: #859900;">class</span> <span style="color: #2aa198;">'int'</span>&gt;
 </pre>
 </div>
 <ul class="org-ul">
-<li>This would tell me that the data-type was a <code>dict</code>.
+<li>This would tell me that the data-type was an <code>int</code>, which is short for <i>integer</i>.
 </li>
 <li>Look up each of the data-types for the variables above and then use the web to find out what they each mean (in simple English).
 </li>
@@ -457,6 +458,8 @@ secondFriendName
 </li>
 <li>There are lots of mathematical <code>operators</code> we can use. Here is a table of all of them for reference later on.
 </li>
+<li>In the examples below <code>a = 10</code> and <code>b = 20</code>
+</li>
 </ul>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -477,31 +480,43 @@ secondFriendName
 </thead>
 <tbody>
 <tr>
-<td class="left">+</td>
+<td class="left"><code>+</code></td>
 <td class="left">Addition - Adds values on either side of the operator</td>
 <td class="left">a + b will give 30</td>
 </tr>
 
 <tr>
-<td class="left">*</td>
+<td class="left"><code>-</code></td>
+<td class="left">Subtraction</td>
+<td class="left">b - a will give 10</td>
+</tr>
+
+<tr>
+<td class="left"><code>*</code></td>
 <td class="left">Multiplication</td>
 <td class="left">a * b will give 200</td>
 </tr>
 
 <tr>
-<td class="left">%</td>
+<td class="left"><code>/</code></td>
+<td class="left">Division</td>
+<td class="left">b / a will give 2</td>
+</tr>
+
+<tr>
+<td class="left"><code>%</code></td>
 <td class="left">Modulus - <b>remainder</b> of a division</td>
 <td class="left">b % a will give 0</td>
 </tr>
 
 <tr>
-<td class="left">**</td>
+<td class="left"><code>**</code></td>
 <td class="left">To the power of</td>
 <td class="left">a**b will give 10 to the power 20</td>
 </tr>
 
 <tr>
-<td class="left">//</td>
+<td class="left"><code>//</code></td>
 <td class="left">Division and round down</td>
 <td class="left">9//2 is equal to 4 and 9.0//2.0 is equal to 4.0</td>
 </tr>
@@ -528,11 +543,11 @@ secondFriendName
 </li>
 <li>39483 ÷ 321
 </li>
-<li>The remainder when 123 ÷
+<li>The remainder when 123 is divided by 2
 </li>
 <li>1234 raised to the power of 4
 </li>
-<li>What is 15% of 50
+<li>What is 15% of 50 (remember that % in Python is modulus and not percent)
 </li>
 </ol>
 </li>
