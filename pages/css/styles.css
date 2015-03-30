@@ -151,7 +151,7 @@ body {
   margin: 20px auto;
   clear: both;
 }
-code {
+p code {
   border-radius: 4px 4px 4px 4px;
   background: #e0e7f5;
   padding: 2px 5px;
@@ -182,9 +182,7 @@ pre {
   -webkit-hyphens: none;
   -moz-hyphens: none;
   hyphens: none;
-  overflow: scroll;
-  /*    word-wrap: normal;*/
-
+  overflow: auto;
 }
 /* CSS For Lesson*/
 .link-heading {
@@ -226,8 +224,7 @@ video {
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
-  /*display: block;*/
-
+  display: block;
   max-width: 600px;
 }
 .activity iframe,
