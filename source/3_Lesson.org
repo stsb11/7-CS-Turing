@@ -230,7 +230,7 @@ Ba Ba Black Sheep
 #+begin_src python
 Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep 
 #+end_src
-* Gettin Input
+* Getting Input
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -328,11 +328,23 @@ int(foo) + int(bar)
 #+begin_src python
 num = int(input('Give me a number '))
 #+end_src
+- If we want to concatenate numbers onto string we have a problem though.
+#+begin_src python
+answer = 5
+print('The answer is ' + answer)
+#+end_src
+- If you try to run this, you'll get an error as we can't concatenate strings and integers.
+- We need to type cast the =int= to a =str= first.
+#+begin_src python
+answer = 5
+print('The answer is ' + str(answer))
+#+end_src
 ** Badge It - Platinum
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
 - Use what you have learned to fix the 'Amazing Calculator'
+- You'll need to type cast the user input to ints, then type cast the answer back to a string.
 - Can you make another script that asks the user for 5 numbers and calculates the mean average of the numbers?
 
 #  LocalWords:  firstScript secondScript Calc firstNum secondNum
