@@ -269,4 +269,4 @@ else:
 :HTML_CONTAINER_CLASS: badge
 :END:
 - Now try adding 3 simple Maths questions to the quiz (addition, multiplication, subtraction or division (+,*,-,/))
-- Add another question 3 questions that asks the user to answer the same questions you answered for the[[file:1_Lesson.html][ The Gold Badge on Week 1]].
+- Add another question 3 questions that asks the user to answer the same questions you answered for the[[file:1_Lesson.html][ The Platinum Badge on Week 1]]
