@@ -218,7 +218,7 @@
           
 #+end_src
 - Finish of the script so that it works for any day of the year.
--[[http://gintama.wikia.com/wiki/Birthdates_%2526_Zodiac_Signs][ This website might help]]
+-[[http://entertainment.howstuffworks.com/horoscopes-astrology/horoscope3.html][ This website might help]]
 ** Learn It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
