@@ -11,7 +11,7 @@
 #+BEGIN_HTML
   <div class="github-fork-ribbon-wrapper left">
     <div class="github-fork-ribbon">
-      <a href="https://github.com/MarcScott/7-CS-Turing">Fork me on GitHub</a>
+      <a href="https://github.com/stsb11/7-CS-Turing">Fork me on GitHub</a>
     </div>
   </div>
 <div id="stickyribbon">
@@ -96,7 +96,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-[[http://upload.wikimedia.org/wikipedia/en/c/c8/Alan_Turing_photo.jpg]]
+[[./img/AlanTuring.jpg]]
 ** Learn It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
