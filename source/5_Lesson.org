@@ -137,6 +137,10 @@
 - Create a script that asks for the user to type in their name.
 - If the name provided matches one of your friend's names then it should give a nice response.
 - If it does not match your friend's names then it should produce a *mild* insult.
+- The code from above is given to help you get started...
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/a6add65f58" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 * More Operators
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -179,7 +183,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-1. Write a script that asks the user when Alan Turing dies. If they get it right, it should congratulate them. If they're too early or late, it should tell them.
+1. Write a script that asks the user what year [[https://en.wikipedia.org/wiki/Alan_Turing][Alan Turing]] died. If they get it right, it should congratulate them. If they're too early or late, it should tell them accordingly.
 2. Write a script that asks the user for the to calculate the sum of two numbers, and tells them if they're too high, too low or correct.
 3. Write a script that asks the user where Alan Turing worked during World War II. If they /don't/ get it right it should tell them so. Otherwise it should congratulate them.
 * Nesting Conditionals
@@ -214,11 +218,13 @@
           print('You will live a long life')
       else:
           print('You are an Aquarius')
-          print('You will live a long life')
-          
+          print('You will live a long life')          
 #+end_src
 - Finish of the script so that it works for any day of the year.
 -[[http://entertainment.howstuffworks.com/horoscopes-astrology/horoscope3.html][ This website might help]]
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/0c823ced2d" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 ** Learn It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
@@ -234,4 +240,3 @@
   - The Current Day (Monday - Friday)
   - The Current Period (1-5)
 - Create a script that will report back which lesson you should be in, dependent on how you answer three questions regarding the Week, Day and Period.
-

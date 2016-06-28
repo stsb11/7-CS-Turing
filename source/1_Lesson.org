@@ -6,7 +6,7 @@
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil toc:nil html-style:nil
 
 #+TITLE: Touring Turing
-#+AUTHOR: Marc Scott
+#+AUTHOR: Marc Scott, Stephen Brown
 
 #+BEGIN_HTML
   <div class="github-fork-ribbon-wrapper left">
@@ -147,7 +147,7 @@ myName = 'Alice'
 - You can obviously use your own name.
 - You have now stored your name in RAM. You have done this using a =variable=
 - For now think of a =variable= is being made up of an /identifier/ (=myName=) and a /value/ (=Alice=)
-*** Note - Once you have hit =ENTER= you can not delete what has been executed, any more than you can unbreak an egg. If you make a mistake, just type it out again (or hit =alt= + =p= on your keyboard to bring up the last command again, and alter it from there.
+- *Note - Once you have hit =ENTER= you can not delete what has been executed, any more than you can unbreak an egg. If you make a mistake, just type it out again (or hit =alt= + =p= on your keyboard to bring up the last command again, and alter it from there.*
 ** Try It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try

@@ -111,7 +111,7 @@
 - In Python we can use what is known as a =while= loop.
 - Thinking back to our earlier examples of deciding what to do depending upon the weather is like outside; you might say something along the lines of...
 #+begin_quote
-While it is raining outside, I am staying indoor.
+While it is raining outside, I am staying indoors.
 #+end_quote
 - In Python this would look something like;
 #+begin_src python
@@ -126,7 +126,7 @@ While it is raining outside, I am staying indoor.
 :END:
 - Let's start by trying a version of the example above, but add a little user input into the code.
 #+begin_src python
-  raining = input('Is it raining outside ')
+  raining = input('Is it raining outside? ')
   while raining == 'yes':
       print('You had best stay indoors')
   print('You can go outside')

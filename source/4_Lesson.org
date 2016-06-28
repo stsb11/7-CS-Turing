@@ -6,12 +6,12 @@
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil toc:nil html-style:nil
 
 #+TITLE: Touring Turing
-#+AUTHOR: Marc Scott
+#+AUTHOR: Marc Scott, Stephen Brown
 
 #+BEGIN_HTML
   <div class="github-fork-ribbon-wrapper left">
     <div class="github-fork-ribbon">
-      <a href="https://github.com/MarcScott/7-CS-Turing">Fork me on GitHub</a>
+      <a href="https://github.com/stsb11/7-CS-Turing">Fork me on GitHub</a>
     </div>
   </div>
 <div id="stickyribbon">
@@ -23,8 +23,6 @@
       <li><a href="5_Lesson.html">Week5</a></li>
       <li><a href="6_Lesson.html">Week6</a></li>
       <li><a href="7_Lesson.html">Week7</a></li>
-      <li><a href="assessment.html">Assessment</a></li>
-
     </ul>
   </div>
 #+END_HTML
@@ -115,7 +113,6 @@ If it is cold I will take my coat, else I'll leave it at home.
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-
 - Let's try and code the above example using python.
 - Open IDLE and create a new script (=Ctrl+n=) called =coat.py=
 - We need to start by creating a variable to store whether it is cold or not.
@@ -162,7 +159,6 @@ if coldOutside == True:
   1. Write a script that prints out whether you should have a snack based on whether you are hungry or not.
   2. Write a script that prints out whether you should have a sleep or not based on whether you are tired or not.
   3. Write a script that prints out whether you should take a bus or not based on whether your journey is a long one.
-
 * More tests
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -200,7 +196,7 @@ if coldOutside == True:
   if pets == 'yes':
       print("That's nice. I love pets")
   else:
-      print("That's a shame. You should buy a dog")
+      print("That's a shame. You should buy a dog.")
 #+end_src
 - Add a few more questions and responses of your own, to extend the chatbot.
 ** Badge It - Gold
@@ -225,8 +221,10 @@ if coldOutside == True:
 score = score + 1
 #+end_src
 - adds 1 to the score. As it has whitespace before it, it only runs when the user gets the answer correct.
-- Add 9 more questions to your script.
-
+- Add 4 more questions to your script.
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/d7e0c97d04" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 * Type Casting again
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity

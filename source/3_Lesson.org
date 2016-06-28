@@ -11,7 +11,7 @@
 #+BEGIN_HTML
   <div class="github-fork-ribbon-wrapper left">
     <div class="github-fork-ribbon">
-      <a href="https://github.com/MarcScott/7-CS-Turing">Fork me on GitHub</a>
+      <a href="https://github.com/stsb11/7-CS-Turing">Fork me on GitHub</a>
     </div>
   </div>
 <div id="stickyribbon">
@@ -23,8 +23,6 @@
       <li><a href="5_Lesson.html">Week5</a></li>
       <li><a href="6_Lesson.html">Week6</a></li>
       <li><a href="7_Lesson.html">Week7</a></li>
-      <li><a href="assessment.html">Assessment</a></li>
-
     </ul>
   </div>
 #+END_HTML
@@ -170,25 +168,21 @@ print('Hello World!')
 :HTML_CONTAINER_CLASS: learn
 :END:
 - We can print almost anything we like. Try out the following little scripts.
-#+begin_src python
-foo = 'Hi I am foo'
-print(foo)
-#+end_src
-#+begin_src python
-bar = 6
-baz = 8
-print(baz-bar)
-#+end_src
-#+begin_src python
-qux = 100
-print("Now that's a lot of qux"*qux)
-#+end_src
-#+begin_src python
-foo = 'Hello'
-bar = ' '
-baz = 'World!'
-print(foo+bar+baz)
-#+end_src
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/d9f7f47138" width="100%" height="250" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
+
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/b861214ad7" width="100%" height="250" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
+
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/3ceb42d0cc" width="100%" height="250" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
+
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/f73ac8c033" width="100%" height="250" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 ** Badge It - Silver
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
@@ -212,6 +206,10 @@ baz = 12
 #+begin_src python
 238
 #+end_src
+
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/0144d6bb0a" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 *** Set B
 #+begin_src python
 foo = 'Ba '
@@ -230,6 +228,10 @@ Ba Ba Black Sheep
 #+begin_src python
 Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep Ba Ba Black Sheep 
 #+end_src
+
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/792ab87c32" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 * Getting Input
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -268,9 +270,12 @@ print("I've heard that " + place + ' is a horrible place to have ' + pet + 's')
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- Create a new script called =conversation.py=
-- Try to write your own script that let's you have a bit of a conversation with the computer
-- Try to use at least three or four =input()= and =print()= statements
+- Create a new script called =conversation.py=.
+- Try to write your own script that let's you have a bit of a conversation with the computer.
+- Try to use at least three or four =input()= and =print()= statements.
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/e9ed3a3b01" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
@@ -346,5 +351,8 @@ print('The answer is ' + str(answer))
 - Use what you have learned to fix the 'Amazing Calculator'
 - You'll need to type cast the user input to ints, then type cast the answer back to a string.
 - Can you make another script that asks the user for 5 numbers and calculates the mean average of the numbers?
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/b1c42568b7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 
 #  LocalWords:  firstScript secondScript Calc firstNum secondNum
