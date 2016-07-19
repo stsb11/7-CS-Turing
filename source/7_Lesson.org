@@ -11,7 +11,7 @@
 #+BEGIN_HTML
   <div class="github-fork-ribbon-wrapper left">
     <div class="github-fork-ribbon">
-      <a href="https://github.com/MarcScott/7-CS-Turing">Fork me on GitHub</a>
+      <a href="https://github.com/stsb11/7-CS-Turing">Fork me on GitHub</a>
     </div>
   </div>
 <div id="stickyribbon">
@@ -24,7 +24,6 @@
       <li><a href="6_Lesson.html">Week6</a></li>
       <li><a href="7_Lesson.html">Week7</a></li>
       <li><a href="assessment.html">Assessment</a></li>
-
     </ul>
   </div>
 #+END_HTML
@@ -125,6 +124,9 @@
       x = x - 1
 #+end_src
 - Run the code and see what happens.
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/36fa8c2e86" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 - Now we're going to edit the code a little.
 #+begin_src python
   x = 10
@@ -162,6 +164,7 @@
 #+begin_src python
   number = 7
   guess = None
+
   while guess != number:
       guess = int(input('What number am I thinking of? '))
       if guess > number:
@@ -172,7 +175,10 @@
           print('Well done')
 #+end_src
 - Create a new script and call it =guessAnumber.py=
-- Copy and paste the code in above.
+- Copy and paste the code in above, or use the Trinket below:
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/5a13331386" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 - Run the code and make sure you are familiar with how it works.
 ** Badge It - Silver
 :PROPERTIES:
@@ -230,6 +236,9 @@ False
 
 #+RESULTS:
 - Run the program and see what happens.
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/a13820cfb0" width="100%" height="350" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 - Try it with a few other numbers.
 - What happens when you use the number =152399025=?
 ** Badge It - Gold

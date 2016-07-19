@@ -131,11 +131,15 @@ While it is raining outside, I am staying indoors.
       print('You had best stay indoors')
   print('You can go outside')
 #+end_src
+- Feel free to use the Trinket below.
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/4e84d6a4d3" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 - Run your code and see what happens, when you type 'no'
 - As =raining= does not equal 'yes', the computer does not enter the while loop, so the lines are skipped to the next line with no whitespace.
 - Run it again, and this time type 'yes'.
 - Is there a problem?
-- You can quit a running program by using the shortcut =Ctrl+c=
+- When using the IDLE environment, you can quit a running program by using the shortcut =Ctrl+c=
 ** Learn It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
@@ -177,11 +181,13 @@ While it is raining outside, I am staying indoors.
 - This time we'll use the ==!= comparison (not equal to)
 #+begin_src python
   password = 'correct horse battery staple'
-  attempt = input('Please enter a password ')
+
+  attempt = input('Please enter a password: ')
+
   while attempt != password:
       print('Access denied')
-      attempt = input('Please enter a password ')
-  print('Access granted.)
+      attempt = input('Please enter a password: ')
+  print('Access granted')
 #+end_src
 ** Badge It - Silver
 :PROPERTIES:
@@ -190,7 +196,11 @@ While it is raining outside, I am staying indoors.
 - Try and write a script that asks the user to answer a simple sum.
 - If they get it right, they should be congratulated
 - If they get it wrong they should be asked the question again.
-- Don't forget to type cast the user input.
+- Don't forget to type cast the user input. 
+- The example above is shown below in a Trinket; you might be able to use this to help.
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/48befb966f" width="100%" height="350" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 * Counting
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -208,12 +218,16 @@ While it is raining outside, I am staying indoors.
 :END:
 #+begin_src python
   count = 1
+
   while count <= 100:
       print(count)
       count = count + 1
 #+end_src
 - Can you alter the code so that the computer counts to 10000
 - Alter it so that it counts in 2s, then 10s
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/6725e75830" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 ** Badge It - Gold
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
@@ -221,6 +235,7 @@ While it is raining outside, I am staying indoors.
 - Create a while loop that counts down from 100 to 0.
 - Create a while loop that prints out 1, and then doubles it, printing out the answer each time until it reaches 1,000,000
 - Create a while loop that prints out *Computing is Grrrreat* a thousand times.
+- Upload a screenshot of your code for these problems to [[https://www.bournetolearn.com][www.bournetolearn.com]]
 * Singing
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -230,12 +245,12 @@ While it is raining outside, I am staying indoors.
 :HTML_CONTAINER_CLASS: learn
 :END:
 - There are lots of counting songs that children use to learn to count:
-  - 5 Little Ducks went swimming one day
-  - 5 Currant Buns in a baker's shop
+  - 5 Little ducks went swimming one day
+  - 5 Currant buns in a baker's shop
   - 5 Little Speckled Frogs
   - 5 Little Monkeys
   - 5 Red Apples
-- If you don't know the lyrics, you can listen to some of them[[http://www.bbc.co.uk/schoolradio/subjects/mathematics/countingsongs][ here]].
+- If you don't know the lyrics, you can listen to some of them [[http://www.bbc.co.uk/schoolradio/subjects/mathematics/countingsongs][here]].
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
@@ -245,22 +260,26 @@ While it is raining outside, I am staying indoors.
 #+begin_html
 <iframe width="420" height="315" src="https://www.youtube.com/embed/Ak7kedzR8bg" frameborder="0" allowfullscreen></iframe>
 #+end_html
-- But what if I asked you to write out the lyrics to 1000 green bottles.
+- But what if I asked you to write out the lyrics to 100 or even 1000 green bottles.
 - Have a look at the script below.
 #+begin_src python
 bottles = 1000
+
 while bottles > 0:
-    print(str(bottles) + ' green bottles sitting on the wall')
-    print(str(bottles) + ' green bottles sitting on the wall')
-    print('And if one green bottle should accidently fall')
-    bottles = bottles -1
-    print("There'll be " + str(bottles) + ' green bottles, sitting on the wall')
+    print(str(bottles) + ' green bottles sitting on the wall,')
+    print(str(bottles) + ' green bottles sitting on the wall,')
+    print('And if one green bottle should accidently fall,')
+    bottles = bottles - 1
+    print("There'll be " + str(bottles) + ' green bottles, sitting on the wall.')
 #+end_src
-- Copy and paste the code into a new script and run it. You can change the bottles variable to anything you like.
+- Copy and paste the code into a new script and run it. You can change the =bottles= variable to anything you like.
 ** Badge It - Platinum
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
 - Try and create a script to write out the lyrics of one of the songs listed above.
-- Use a variable to keep track of the numbers of Frogs, Buns or Ducks, and a while loop to change them.
-
+- Use a variable to keep track of the numbers of Frogs, Buns or Ducks, and a =while= loop to change them.
+- The code for 100 green bottles is given for you to get you started.
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/fd3e3f2bed?toggleCode=true" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML

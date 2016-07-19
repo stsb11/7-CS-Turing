@@ -145,6 +145,11 @@ While it is raining outside, I am staying indoors.
 </pre>
 </div>
 <ul class="org-ul">
+<li>Feel free to use the Trinket below.
+</li>
+</ul>
+<iframe src="https://trinket.io/embed/python/4e84d6a4d3" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<ul class="org-ul">
 <li>Run your code and see what happens, when you type 'no'
 </li>
 <li>As <code>raining</code> does not equal 'yes', the computer does not enter the while loop, so the lines are skipped to the next line with no whitespace.
@@ -153,7 +158,7 @@ While it is raining outside, I am staying indoors.
 </li>
 <li>Is there a problem?
 </li>
-<li>You can quit a running program by using the shortcut <code>Ctrl+c</code>
+<li>When using the IDLE environment, you can quit a running program by using the shortcut <code>Ctrl+c</code>
 </li>
 </ul>
 </div>
@@ -269,11 +274,13 @@ While it is raining outside, I am staying indoors.
 <div class="org-src-container">
 
 <pre class="src src-python"><span style="color: #268bd2;">password</span> = <span style="color: #2aa198;">'correct horse battery staple'</span>
-<span style="color: #268bd2;">attempt</span> = <span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">'Please enter a password '</span>)
+
+<span style="color: #268bd2;">attempt</span> = <span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">'Please enter a password: '</span>)
+
 <span style="color: #859900; font-weight: bold;">while</span> attempt != password:
     <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'Access denied'</span>)
-    <span style="color: #268bd2;">attempt</span> = <span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">'Please enter a password '</span>)
-<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'Access granted.)</span>
+    <span style="color: #268bd2;">attempt</span> = <span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">'Please enter a password: '</span>)
+<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'Access granted'</span>)
 </pre>
 </div>
 </div>
@@ -288,9 +295,12 @@ While it is raining outside, I am staying indoors.
 </li>
 <li>If they get it wrong they should be asked the question again.
 </li>
-<li>Don't forget to type cast the user input.
+<li>Don't forget to type cast the user input. 
+</li>
+<li>The example above is shown below in a Trinket; you might be able to use this to help.
 </li>
 </ul>
+<iframe src="https://trinket.io/embed/python/48befb966f" width="100%" height="350" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 </div>
 </div>
@@ -317,6 +327,7 @@ While it is raining outside, I am staying indoors.
 <div class="org-src-container">
 
 <pre class="src src-python"><span style="color: #268bd2;">count</span> = 1
+
 <span style="color: #859900; font-weight: bold;">while</span> count &lt;= 100:
     <span style="color: #859900; font-weight: bold;">print</span>(count)
     <span style="color: #268bd2;">count</span> = count + 1
@@ -328,6 +339,7 @@ While it is raining outside, I am staying indoors.
 <li>Alter it so that it counts in 2s, then 10s
 </li>
 </ul>
+<iframe src="https://trinket.io/embed/python/6725e75830" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 </div>
 <div id="outline-container-sec-2-3" class="outline-3 badge">
@@ -339,6 +351,8 @@ While it is raining outside, I am staying indoors.
 <li>Create a while loop that prints out 1, and then doubles it, printing out the answer each time until it reaches 1,000,000
 </li>
 <li>Create a while loop that prints out <b>Computing is Grrrreat</b> a thousand times.
+</li>
+<li>Upload a screenshot of your code for these problems to <a href="https://www.bournetolearn.com">www.bournetolearn.com</a>
 </li>
 </ul>
 </div>
@@ -354,9 +368,9 @@ While it is raining outside, I am staying indoors.
 <ul class="org-ul">
 <li>There are lots of counting songs that children use to learn to count:
 <ul class="org-ul">
-<li>5 Little Ducks went swimming one day
+<li>5 Little ducks went swimming one day
 </li>
-<li>5 Currant Buns in a baker's shop
+<li>5 Currant buns in a baker's shop
 </li>
 <li>5 Little Speckled Frogs
 </li>
@@ -366,7 +380,7 @@ While it is raining outside, I am staying indoors.
 </li>
 </ul>
 </li>
-<li>If you don't know the lyrics, you can listen to some of them<a href="http://www.bbc.co.uk/schoolradio/subjects/mathematics/countingsongs"> here</a>.
+<li>If you don't know the lyrics, you can listen to some of them <a href="http://www.bbc.co.uk/schoolradio/subjects/mathematics/countingsongs">here</a>.
 </li>
 </ul>
 </div>
@@ -382,7 +396,7 @@ While it is raining outside, I am staying indoors.
 </ul>
 <iframe width="420" height="315" src="https://www.youtube.com/embed/Ak7kedzR8bg" frameborder="0" allowfullscreen></iframe>
 <ul class="org-ul">
-<li>But what if I asked you to write out the lyrics to 1000 green bottles.
+<li>But what if I asked you to write out the lyrics to 100 or even 1000 green bottles.
 </li>
 <li>Have a look at the script below.
 </li>
@@ -390,16 +404,17 @@ While it is raining outside, I am staying indoors.
 <div class="org-src-container">
 
 <pre class="src src-python"><span style="color: #268bd2;">bottles</span> = 1000
+
 <span style="color: #859900; font-weight: bold;">while</span> bottles &gt; 0:
-    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #657b83; font-weight: bold;">str</span>(bottles) + <span style="color: #2aa198;">' green bottles sitting on the wall'</span>)
-    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #657b83; font-weight: bold;">str</span>(bottles) + <span style="color: #2aa198;">' green bottles sitting on the wall'</span>)
-    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'And if one green bottle should accidently fall'</span>)
-    <span style="color: #268bd2;">bottles</span> = bottles -1
-    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"There'll be "</span> + <span style="color: #657b83; font-weight: bold;">str</span>(bottles) + <span style="color: #2aa198;">' green bottles, sitting on the wall'</span>)
+    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #657b83; font-weight: bold;">str</span>(bottles) + <span style="color: #2aa198;">' green bottles sitting on the wall,'</span>)
+    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #657b83; font-weight: bold;">str</span>(bottles) + <span style="color: #2aa198;">' green bottles sitting on the wall,'</span>)
+    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'And if one green bottle should accidently fall,'</span>)
+    <span style="color: #268bd2;">bottles</span> = bottles - 1
+    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"There'll be "</span> + <span style="color: #657b83; font-weight: bold;">str</span>(bottles) + <span style="color: #2aa198;">' green bottles, sitting on the wall.'</span>)
 </pre>
 </div>
 <ul class="org-ul">
-<li>Copy and paste the code into a new script and run it. You can change the bottles variable to anything you like.
+<li>Copy and paste the code into a new script and run it. You can change the <code>bottles</code> variable to anything you like.
 </li>
 </ul>
 </div>
@@ -410,9 +425,12 @@ While it is raining outside, I am staying indoors.
 <ul class="org-ul">
 <li>Try and create a script to write out the lyrics of one of the songs listed above.
 </li>
-<li>Use a variable to keep track of the numbers of Frogs, Buns or Ducks, and a while loop to change them.
+<li>Use a variable to keep track of the numbers of Frogs, Buns or Ducks, and a <code>while</code> loop to change them.
+</li>
+<li>The code for 100 green bottles is given for you to get you started.
 </li>
 </ul>
+<iframe src="https://trinket.io/embed/python/fd3e3f2bed?toggleCode=true" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 </div>
 </div>
