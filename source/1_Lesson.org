@@ -6,7 +6,7 @@
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil toc:nil html-style:nil
 
 #+TITLE: Touring Turing
-#+AUTHOR: Marc Scott, Stephen Brown
+#+AUTHOR: Marc Scott, Stephen Brown,Xiaohui Ellis
 
 #+BEGIN_HTML
   <div class="github-fork-ribbon-wrapper left">
@@ -119,16 +119,16 @@
 - [[https://www.python.org/ftp/python/3.4.2/python-3.4.2-macosx10.6.pkg][Python 3.4 for Mac]]
 - [[https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64.msi][Python 3.4 for Windows]]
 - If you need Python 3 for Linux - use your package manager =sudo apt-get update && sudo apt-get install python3 idle3= (on Ubuntu for instance)
-- If you're working in school, then you should find a program called IDLE, in your programs menu.
+- If you're working in school, then you should find a program called Thonny, inside the computing folder on the desktop.
 ** Try It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-- Open up IDLE. You should be presented with a screen that looks a little like this:
-[[file:img/IDLE.png]]
-- IDLE is an Integrated Development Environment (IDE) for Python. This means we can create, edit and run Python files using it.
-- The screen that popped up is called the =INTERPRETER=. Remember this, and what it looks like.
-- We can write code in the interpreter, and it gets executed straight away.
+- Open up Thonny. You should be presented with a screen that looks a little like this:
+[[file:img/Thonny.png]]
+- Thonny is an Integrated Development Environment (IDE) for Python, particularly suitable for beginners. You can create, edit and run Python files using it.
+- We can write code in the code editor window (the upper window), and when you press the green button with a white triangle in it, it gets executed and the results will be shown in the shell (the lower window).
+- You can also input code one line at a time in the shell prompt. When you hit enter, that line of code gets executed right away.
 ** Learn It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
@@ -140,7 +140,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- Let's write some data to RAM.
+- Let's write some data to RAM using the shell in Thonny.
 #+begin_src python
 myName = 'Alice'
 #+end_src
