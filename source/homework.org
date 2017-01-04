@@ -23,7 +23,7 @@
       <li><a href="5_Lesson.html">Week5</a></li>
       <li><a href="6_Lesson.html">Week6</a></li>
       <li><a href="7_Lesson.html">Week7</a></li>
-      <li><a href="homework.html">Assessment</a></li>
+      <li><a href="homework.html">Homework</a></li>
 
     </ul>
   </div>
@@ -96,14 +96,165 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-** Week 1
+** Homework 1
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
+- *Note:* The answers to all these questions can be obtained from the week 1 notes.
 - What symbol do we use for assigning a value to a variable? 
-- What are the four name rules for making a variable? 
-- What is /modulus/?
-- What are the four data types for numbers in Python?
-
+- What symbol do we place around text when storing it in a variable?
+- What is wrong with each of these variable names?
+ - 4myBirthday
+ - For My Birthday
+ - ForMyBirthday!
+- Name three different data types in Python.
+- What does the % operator do in Python?
 
 - Answers to be submitted for the homework 1 badge on [[https://www.bournetolearn.com/][BourneToLearn]].
+
+** Homework 2
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- What would be the result of the following sets of code?
+
+#+BEGIN_SRC python
+# Question 1. Keeping the doctor at bay.
+apples = 2
+days = 365
+annualApples = apples * days
+
+print(annualApples)
+#+END_SRC
+
+#+BEGIN_SRC python
+# Question 2. Leftovers.
+daysInYear = 365
+weeksInYear = 365 % 52
+
+print(weeksInYear)
+#+END_SRC
+
+#+BEGIN_SRC python
+# Question 3. On the up.
+a = 5
+b = 10
+c = 2
+a = a + 1
+a = a + 1
+
+print (a)
+print(b + c)
+#+END_SRC
+
+#+BEGIN_SRC python
+# Question 4. As I was going to St. Ives...
+man = 1
+wives = 7
+sacks = 7
+cats = 7
+kittens = 7
+goingToStIves = man + wives + (wives * sacks) + (wives * sacks * cats) + (wives * sacks * cats * kittens)
+
+print(goingToStIves)
+#+END_SRC
+
+
+- Answers to be submitted for the homework 2 badge on [[https://www.bournetolearn.com/][BourneToLearn]].
+
+** Homework 3
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- What outputs do the following sets of code produce?
+#+BEGIN_SRC python
+# Quick calculation.
+numberA = 42
+numberB = 3.142
+yourAnswer = 100
+
+if numberA + numberB >= yourAnswer:
+    print("That's interesting.")
+else:
+    print("Good effort.")
+#+END_SRC
+
+#+BEGIN_SRC python
+# Cool calculator
+yearsOld = 12
+daysOld = 365.25 * yearsOld
+
+if daysOld > 7300:
+    print("You are really old")
+elif daysOld > 5000:
+    print("You're getting on a bit")
+else:
+    print("You're young and happening!")
+
+print("Thank you for playing")
+#+END_SRC
+
+#+BEGIN_SRC python
+# Poorly scored quiz...
+score = 0
+capitalEngland = "London"
+capitalAustralia = "Sydney"
+capitalFrance = "Paris"
+
+if capitalEngland == "London" or capitalEngland == "LONDON":
+    score += 1
+
+if capitalAustralia == "Canberra" and capitalFrance == "Paris":
+    score +=2
+
+print("You scored: " + str(score))
+#+END_SRC
+
+#+BEGIN_SRC python
+# The drinks machine
+wantsTea = True
+wantsSugar = False
+wantsMilk = True
+
+if wantsTea == True:
+    if wantsSugar == True:
+        if wantsMilk == True:
+            print("Drink A")
+        else:
+            print("Drink B.")
+    else:
+        if wantsMilk == True:
+            print("Drink C")
+        else:
+            print("Drink D")
+else:
+    print("Drink E")
+#+END_SRC
+
+#+BEGIN_SRC python
+# Used car value calculator...
+carMake = "Morris"
+newPrice = 4000
+condition = "Good"
+
+if carMake == "Fjord" or carMake = "Austin":
+    discount = 0.8
+elif carMake == "Morris:"
+    discount = 0.5
+else:
+    discount = 0.75
+
+usedPrice = newPrice * discount
+
+if condition == "Excellent":
+    discount = 0.8
+elif condition == "Good" or condition == "Fair":
+    discount = 0.75
+else:
+    discount = 0.5
+
+usedPrice = usedPrice * discount
+print("It's worth £" + str(usedPrice))
+#+END_SRC
+
+- Answers to be submitted as a text file, uploaded into the homework 3 badge on [[https://www.bournetolearn.com/][BourneToLearn]].
