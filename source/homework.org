@@ -1,0 +1,260 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil toc:nil html-style:nil
+
+#+TITLE: Touring Turing
+#+AUTHOR: Marc Scott, Stephen Brown
+
+#+BEGIN_HTML
+  <div class="github-fork-ribbon-wrapper left">
+    <div class="github-fork-ribbon">
+      <a href="https://github.com/stsb11/7-CS-Turing">Fork me on GitHub</a>
+    </div>
+  </div>
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Week1</a></li>
+      <li><a href="2_Lesson.html">Week2</a></li>
+      <li><a href="3_Lesson.html">Week3</a></li>
+      <li><a href="4_Lesson.html">Week4</a></li>
+      <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href="6_Lesson.html">Week6</a></li>
+      <li><a href="7_Lesson.html">Week7</a></li>
+      <li><a href="homework.html">Homework</a></li>
+
+    </ul>
+  </div>
+#+END_HTML
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+* Homework
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Homework 1
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- *Note:* The answers to all these questions can be obtained from the week 1 notes.
+- What symbol do we use for assigning a value to a variable? 
+- What symbol do we place around text when storing it in a variable?
+- What is wrong with each of these variable names?
+ - 4myBirthday
+ - For My Birthday
+ - ForMyBirthday!
+- Name three different data types in Python.
+- What does the % operator do in Python?
+
+- Answers to be submitted for the homework 1 badge on [[https://www.bournetolearn.com/][BourneToLearn]].
+
+** Homework 2
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- What would be the result of the following sets of code?
+
+#+BEGIN_SRC python
+# Question 1. Keeping the doctor at bay.
+apples = 2
+days = 365
+annualApples = apples * days
+
+print(annualApples)
+#+END_SRC
+
+#+BEGIN_SRC python
+# Question 2. Leftovers.
+daysInYear = 365
+weeksInYear = 365 % 52
+
+print(weeksInYear)
+#+END_SRC
+
+#+BEGIN_SRC python
+# Question 3. On the up.
+a = 5
+b = 10
+c = 2
+a = a + 1
+a = a + 1
+
+print (a)
+print(b + c)
+#+END_SRC
+
+#+BEGIN_SRC python
+# Question 4. As I was going to St. Ives...
+man = 1
+wives = 7
+sacks = 7
+cats = 7
+kittens = 7
+goingToStIves = man + wives + (wives * sacks) + (wives * sacks * cats) + (wives * sacks * cats * kittens)
+
+print(goingToStIves)
+#+END_SRC
+
+
+- Answers to be submitted for the homework 2 badge on [[https://www.bournetolearn.com/][BourneToLearn]].
+
+** Homework 3
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- What outputs do the following sets of code produce?
+#+BEGIN_SRC python
+# Quick calculation.
+numberA = 42
+numberB = 3.142
+yourAnswer = 100
+
+if numberA + numberB >= yourAnswer:
+    print("That's interesting.")
+else:
+    print("Good effort.")
+#+END_SRC
+
+#+BEGIN_SRC python
+# Cool calculator
+yearsOld = 12
+daysOld = 365.25 * yearsOld
+
+if daysOld > 7300:
+    print("You are really old")
+elif daysOld > 5000:
+    print("You're getting on a bit")
+else:
+    print("You're young and happening!")
+
+print("Thank you for playing")
+#+END_SRC
+
+#+BEGIN_SRC python
+# Poorly scored quiz...
+score = 0
+capitalEngland = "London"
+capitalAustralia = "Sydney"
+capitalFrance = "Paris"
+
+if capitalEngland == "London" or capitalEngland == "LONDON":
+    score += 1
+
+if capitalAustralia == "Canberra" and capitalFrance == "Paris":
+    score +=2
+
+print("You scored: " + str(score))
+#+END_SRC
+
+#+BEGIN_SRC python
+# The drinks machine
+wantsTea = True
+wantsSugar = False
+wantsMilk = True
+
+if wantsTea == True:
+    if wantsSugar == True:
+        if wantsMilk == True:
+            print("Drink A")
+        else:
+            print("Drink B.")
+    else:
+        if wantsMilk == True:
+            print("Drink C")
+        else:
+            print("Drink D")
+else:
+    print("Drink E")
+#+END_SRC
+
+#+BEGIN_SRC python
+# Used car value calculator...
+carMake = "Morris"
+newPrice = 4000
+condition = "Good"
+
+if carMake == "Fjord" or carMake = "Austin":
+    discount = 0.8
+elif carMake == "Morris:"
+    discount = 0.5
+else:
+    discount = 0.75
+
+usedPrice = newPrice * discount
+
+if condition == "Excellent":
+    discount = 0.8
+elif condition == "Good" or condition == "Fair":
+    discount = 0.75
+else:
+    discount = 0.5
+
+usedPrice = usedPrice * discount
+print("It's worth £" + str(usedPrice))
+#+END_SRC
+
+- Answers to be submitted as a text file, uploaded into the homework 3 badge on [[https://www.bournetolearn.com/][BourneToLearn]].
