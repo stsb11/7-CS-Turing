@@ -99,16 +99,16 @@ for the JavaScript code in this tag.
 <h3 id="sec-1-2">Try It</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
-<li>Find and open IDLE again.
+<li>Find and open Thonny again.
 </li>
 <li>Now using your keyboard, hit <code>Ctrl</code> + <code>n</code> to make a new file.
 </li>
-<li>A second window should open up that looks like this.
+<li>A tab should open up in the code editor windoq that looks like this.
 </li>
 </ul>
 
 <div class="figure">
-<p><img src="img/script.png" alt="script.png" />
+<p><img src="img/thonny_newfile.png" alt="thonny_newfile.png" />
 </p>
 </div>
 <ul class="org-ul">
@@ -118,11 +118,13 @@ for the JavaScript code in this tag.
 </li>
 <li>Give it the name <code>firstScript.py</code>
 </li>
-<li><b>Make sure you save it in a new directory, and not in the default chosen by IDLE.</b>
+<li><b>Make sure you save it in your own home drive, in your computer science folder.</b>
 </li>
 <li>The <code>.py</code> file extension is important. It lets the Operating System know that the file needs to be run with Python, and not another application like Notepad.
 </li>
 <li>With the <code>.py</code> extension, you'll also get help with the language syntax as key words will be coloured.
+</li>
+<li>Thonny allows you to work with multiple Python files by keeping them in tabs.
 </li>
 </ul>
 </div>
@@ -136,9 +138,9 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">foo</span> = 10
-<span style="color: #268bd2;">bar</span> = 12
-<span style="color: #268bd2;">baz</span> = foo + bar
+<pre class="src src-python">foo = 10
+bar = 12
+baz = foo + bar
 </pre>
 </div>
 <ul class="org-ul">
@@ -191,7 +193,7 @@ baz
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #859900; font-weight: bold;">print</span>(Hello World!)
+<pre class="src src-python">print(Hello World!)
 </pre>
 </div>
 <ul class="org-ul">
@@ -206,7 +208,7 @@ baz
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'Hello World!'</span>)
+<pre class="src src-python">print('Hello World!')
 </pre>
 </div>
 <ul class="org-ul">
@@ -244,9 +246,9 @@ baz
 <div class="outline-text-4" id="text-2-3-1">
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">foo</span> = 10
-<span style="color: #268bd2;">bar</span> = 5
-<span style="color: #268bd2;">baz</span> = 12
+<pre class="src src-python">foo = 10
+bar = 5
+baz = 12
 </pre>
 </div>
 </div>
@@ -288,9 +290,9 @@ baz
 <div class="outline-text-4" id="text-2-3-5">
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">foo</span> = <span style="color: #2aa198;">'Ba '</span>
-<span style="color: #268bd2;">bar</span> = <span style="color: #2aa198;">'Black Sheep '</span>
-<span style="color: #268bd2;">baz</span> = 10
+<pre class="src src-python">foo = 'Ba '
+bar = 'Black Sheep '
+baz = 10
 </pre>
 </div>
 </div>
@@ -346,7 +348,7 @@ baz
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">name</span> = <span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">'What is your name?)</span>
+<pre class="src src-python">name = input('What is your name?)
 </pre>
 </div>
 <ul class="org-ul">
@@ -381,12 +383,12 @@ baz
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">name</span> = <span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">'What is your name? '</span>)
-<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'Hi there '</span> + name)
-<span style="color: #268bd2;">pet</span> = <span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">'What type of pet do you have? '</span>)
-<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'Oh, I love '</span> + pet + <span style="color: #2aa198;">'s'</span>)
-<span style="color: #268bd2;">place</span> = <span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">'Where do you live? '</span>)
-<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"I've heard that "</span> + place + <span style="color: #2aa198;">' is a horrible place to have '</span> + pet + <span style="color: #2aa198;">'s'</span>)
+<pre class="src src-python">name = input('What is your name? ')
+print('Hi there ' + name)
+pet = input('What type of pet do you have? ')
+print('Oh, I love ' + pet + 's')
+place = input('Where do you live? ')
+print("I've heard that " + place + ' is a horrible place to have ' + pet + 's')
 </pre>
 </div>
 </div>
@@ -420,11 +422,11 @@ baz
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'I am the Amazing Calculator, that can add any two numbers in an instant'</span>)
-<span style="color: #268bd2;">firstNum</span> = <span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">'Give me my first number puny mortal '</span>)
-<span style="color: #268bd2;">secondNum</span> = <span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">'Now give me my second number, you fool '</span>)
-<span style="color: #268bd2;">answer</span> = firstNum + secondNum
-<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'The answer to your easy question is '</span> + answer)
+<pre class="src src-python">print('I am the Amazing Calculator, that can add any two numbers in an instant')
+firstNum = input('Give me my first number puny mortal ')
+secondNum = input('Now give me my second number, you fool ')
+answer = firstNum + secondNum
+print('The answer to your easy question is ' + answer)
 </pre>
 </div>
 <ul class="org-ul">
@@ -454,7 +456,7 @@ baz
 <div class="org-src-container">
 
 <pre class="src src-python">10 + 10
-<span style="color: #2aa198;">'10'</span> + <span style="color: #2aa198;">'10'</span>
+'10' + '10'
 </pre>
 </div>
 <ul class="org-ul">
@@ -482,7 +484,7 @@ baz
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #657b83; font-weight: bold;">int</span>(<span style="color: #2aa198;">'10'</span>) + <span style="color: #657b83; font-weight: bold;">int</span>(<span style="color: #2aa198;">'10'</span>)
+<pre class="src src-python">int('10') + int('10')
 </pre>
 </div>
 <ul class="org-ul">
@@ -493,9 +495,9 @@ baz
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">foo</span> = <span style="color: #2aa198;">'10'</span>
-<span style="color: #268bd2;">bar</span> = <span style="color: #2aa198;">'5'</span>
-<span style="color: #657b83; font-weight: bold;">int</span>(foo) + <span style="color: #657b83; font-weight: bold;">int</span>(bar)
+<pre class="src src-python">foo = '10'
+bar = '5'
+int(foo) + int(bar)
 </pre>
 </div>
 <ul class="org-ul">
@@ -504,7 +506,7 @@ baz
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">num</span> = <span style="color: #657b83; font-weight: bold;">int</span>(<span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">'Give me a number '</span>))
+<pre class="src src-python">num = int(input('Give me a number '))
 </pre>
 </div>
 <ul class="org-ul">
@@ -513,8 +515,8 @@ baz
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">answer</span> = 5
-<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'The answer is '</span> + answer)
+<pre class="src src-python">answer = 5
+print('The answer is ' + answer)
 </pre>
 </div>
 <ul class="org-ul">
@@ -525,8 +527,8 @@ baz
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">answer</span> = 5
-<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'The answer is '</span> + <span style="color: #657b83; font-weight: bold;">str</span>(answer))
+<pre class="src src-python">answer = 5
+print('The answer is ' + str(answer))
 </pre>
 </div>
 </div>

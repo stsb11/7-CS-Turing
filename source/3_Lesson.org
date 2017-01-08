@@ -106,16 +106,17 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-- Find and open IDLE again.
+- Find and open Thonny again.
 - Now using your keyboard, hit =Ctrl= + =n= to make a new file.
-- A second window should open up that looks like this.
-[[file:img/script.png]]
+- A tab should open up in the code editor windoq that looks like this.
+[[file:img/thonny_newfile.png]]
 - At the moment it is /Untitled/ so we had best give it a name.
 - Hit =Ctrl= + =s= on your keyboard to save the file.
 - Give it the name =firstScript.py=
-- *Make sure you save it in a new directory, and not in the default chosen by IDLE.*
+- *Make sure you save it in your own home drive, in your computer science folder.*
 - The =.py= file extension is important. It lets the Operating System know that the file needs to be run with Python, and not another application like Notepad.
 - With the =.py= extension, you'll also get help with the language syntax as key words will be coloured.
+- Thonny allows you to work with multiple Python files by keeping them in tabs.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
