@@ -123,50 +123,53 @@ for the JavaScript code in this tag.
 
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">Question 1. Keeping the doctor at bay.</span>
-<span style="color: #268bd2;">apples</span> = 2
-<span style="color: #268bd2;">days</span> = 365
-<span style="color: #268bd2;">annualApples</span> = apples * days
+<pre class="src src-python"># Question 1. Keeping the doctor at bay.
+apples = 2
+days = 365
+annualApples = apples * days
 
-<span style="color: #859900; font-weight: bold;">print</span>(annualApples)
+print(annualApples)
 </pre>
 </div>
 
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">Question 2. Leftovers.</span>
-<span style="color: #268bd2;">daysInYear</span> = 365
-<span style="color: #268bd2;">weeksInYear</span> = 365 % 52
+<pre class="src src-python"># Question 2. Leftovers.
+daysInYear = 365
+daysInWeek = 7
+weeksinYear = daysInYear // daysInWeek
+whatsLeft = daysInYear % daysInWeek
 
-<span style="color: #859900; font-weight: bold;">print</span>(weeksInYear)
+print(weeksInYear)
+print(whatsLeft)
 </pre>
 </div>
 
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">Question 3. On the up.</span>
-<span style="color: #268bd2;">a</span> = 5
-<span style="color: #268bd2;">b</span> = 10
-<span style="color: #268bd2;">c</span> = 2
-<span style="color: #268bd2;">a</span> = a + 1
-<span style="color: #268bd2;">a</span> = a + 1
+<pre class="src src-python"># Question 3. On the up.
+a = 5
+b = 10
+c = 2
+a = a + 1
+a = a + 1
 
-<span style="color: #859900; font-weight: bold;">print</span> (a)
-<span style="color: #859900; font-weight: bold;">print</span>(b + c)
+print (a)
+print(b + c)
 </pre>
 </div>
 
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">Question 4. As I was going to St. Ives...</span>
-<span style="color: #268bd2;">man</span> = 1
-<span style="color: #268bd2;">wives</span> = 7
-<span style="color: #268bd2;">sacks</span> = 7
-<span style="color: #268bd2;">cats</span> = 7
-<span style="color: #268bd2;">kittens</span> = 7
-<span style="color: #268bd2;">goingToStIves</span> = man + wives + (wives * sacks) + (wives * sacks * cats) + (wives * sacks * cats * kittens)
+<pre class="src src-python"># Question 4. As I was going to St. Ives...
+man = 1
+wives = 7
+sacks = 7
+cats = 7
+kittens = 7
+goingToStIves = man + wives + (wives * sacks) + (wives * sacks * cats) + (wives * sacks * cats * kittens)
 
-<span style="color: #859900; font-weight: bold;">print</span>(goingToStIves)
+print(goingToStIves)
 </pre>
 </div>
 
@@ -187,101 +190,101 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">Quick calculation.</span>
-<span style="color: #268bd2;">numberA</span> = 42
-<span style="color: #268bd2;">numberB</span> = 3.142
-<span style="color: #268bd2;">yourAnswer</span> = 100
+<pre class="src src-python"># Quick calculation.
+numberA = 42
+numberB = 3.142
+yourAnswer = 100
 
-<span style="color: #859900; font-weight: bold;">if</span> numberA + numberB &gt;= yourAnswer:
-    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"That's interesting."</span>)
-<span style="color: #859900; font-weight: bold;">else</span>:
-    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"Good effort."</span>)
+if numberA + numberB &gt;= yourAnswer:
+    print("That's interesting.")
+else:
+    print("Good effort.")
 </pre>
 </div>
 
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">Cool calculator</span>
-<span style="color: #268bd2;">yearsOld</span> = 12
-<span style="color: #268bd2;">daysOld</span> = 365.25 * yearsOld
+<pre class="src src-python"># Cool calculator
+yearsOld = 12
+daysOld = 365.25 * yearsOld
 
-<span style="color: #859900; font-weight: bold;">if</span> daysOld &gt; 7300:
-    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"You are really old"</span>)
-<span style="color: #859900; font-weight: bold;">elif</span> daysOld &gt; 5000:
-    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"You're getting on a bit"</span>)
-<span style="color: #859900; font-weight: bold;">else</span>:
-    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"You're young and happening!"</span>)
+if daysOld &gt; 7300:
+    print("You are really old")
+elif daysOld &gt; 5000:
+    print("You're getting on a bit")
+else:
+    print("You're young and happening!")
 
-<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"Thank you for playing"</span>)
+print("Thank you for playing")
 </pre>
 </div>
 
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">Poorly scored quiz...</span>
-<span style="color: #268bd2;">score</span> = 0
-<span style="color: #268bd2;">capitalEngland</span> = <span style="color: #2aa198;">"London"</span>
-<span style="color: #268bd2;">capitalAustralia</span> = <span style="color: #2aa198;">"Sydney"</span>
-<span style="color: #268bd2;">capitalFrance</span> = <span style="color: #2aa198;">"Paris"</span>
+<pre class="src src-python"># Poorly scored quiz...
+score = 0
+capitalEngland = "London"
+capitalAustralia = "Sydney"
+capitalFrance = "Paris"
 
-<span style="color: #859900; font-weight: bold;">if</span> capitalEngland == <span style="color: #2aa198;">"London"</span> <span style="color: #859900; font-weight: bold;">or</span> capitalEngland == <span style="color: #2aa198;">"LONDON"</span>:
-    <span style="color: #268bd2;">score</span> += 1
+if capitalEngland == "London" or capitalEngland == "LONDON":
+    score += 1
 
-<span style="color: #859900; font-weight: bold;">if</span> capitalAustralia == <span style="color: #2aa198;">"Canberra"</span> <span style="color: #859900; font-weight: bold;">and</span> capitalFrance == <span style="color: #2aa198;">"Paris"</span>:
-    <span style="color: #268bd2;">score</span> +=2
+if capitalAustralia == "Canberra" and capitalFrance == "Paris":
+    score +=2
 
-<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"You scored: "</span> + <span style="color: #657b83; font-weight: bold;">str</span>(score))
+print("You scored: " + str(score))
 </pre>
 </div>
 
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">The drinks machine</span>
-<span style="color: #268bd2;">wantsTea</span> = <span style="color: #268bd2; font-weight: bold;">True</span>
-<span style="color: #268bd2;">wantsSugar</span> = <span style="color: #268bd2; font-weight: bold;">False</span>
-<span style="color: #268bd2;">wantsMilk</span> = <span style="color: #268bd2; font-weight: bold;">True</span>
+<pre class="src src-python"># The drinks machine
+wantsTea = True
+wantsSugar = False
+wantsMilk = True
 
-<span style="color: #859900; font-weight: bold;">if</span> wantsTea == <span style="color: #268bd2; font-weight: bold;">True</span>:
-    <span style="color: #859900; font-weight: bold;">if</span> wantsSugar == <span style="color: #268bd2; font-weight: bold;">True</span>:
-        <span style="color: #859900; font-weight: bold;">if</span> wantsMilk == <span style="color: #268bd2; font-weight: bold;">True</span>:
-            <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"Drink A"</span>)
-        <span style="color: #859900; font-weight: bold;">else</span>:
-            <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"Drink B."</span>)
-    <span style="color: #859900; font-weight: bold;">else</span>:
-        <span style="color: #859900; font-weight: bold;">if</span> wantsMilk == <span style="color: #268bd2; font-weight: bold;">True</span>:
-            <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"Drink C"</span>)
-        <span style="color: #859900; font-weight: bold;">else</span>:
-            <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"Drink D"</span>)
-<span style="color: #859900; font-weight: bold;">else</span>:
-    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"Drink E"</span>)
+if wantsTea == True:
+    if wantsSugar == True:
+	if wantsMilk == True:
+	    print("Drink A")
+	else:
+	    print("Drink B.")
+    else:
+	if wantsMilk == True:
+	    print("Drink C")
+	else:
+	    print("Drink D")
+else:
+    print("Drink E")
 </pre>
 </div>
 
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">Used car value calculator...</span>
-<span style="color: #268bd2;">carMake</span> = <span style="color: #2aa198;">"Morris"</span>
-<span style="color: #268bd2;">newPrice</span> = 4000
-<span style="color: #268bd2;">condition</span> = <span style="color: #2aa198;">"Good"</span>
+<pre class="src src-python"># Used car value calculator...
+carMake = "Morris"
+newPrice = 4000
+condition = "Good"
 
-<span style="color: #859900; font-weight: bold;">if</span> carMake == <span style="color: #2aa198;">"Fjord"</span> <span style="color: #859900; font-weight: bold;">or</span> <span style="color: #268bd2;">carMake</span> = <span style="color: #2aa198;">"Austin"</span>:
-    <span style="color: #268bd2;">discount</span> = 0.8
-<span style="color: #859900; font-weight: bold;">elif</span> carMake == <span style="color: #2aa198;">"Morris:"</span>
-    <span style="color: #268bd2;">discount</span> = 0.5
-<span style="color: #859900; font-weight: bold;">else</span>:
-    <span style="color: #268bd2;">discount</span> = 0.75
+if carMake == "Fjord" or carMake = "Austin":
+    discount = 0.8
+elif carMake == "Morris:"
+    discount = 0.5
+else:
+    discount = 0.75
 
-<span style="color: #268bd2;">usedPrice</span> = newPrice * discount
+usedPrice = newPrice * discount
 
-<span style="color: #859900; font-weight: bold;">if</span> condition == <span style="color: #2aa198;">"Excellent"</span>:
-    <span style="color: #268bd2;">discount</span> = 0.8
-<span style="color: #859900; font-weight: bold;">elif</span> condition == <span style="color: #2aa198;">"Good"</span> <span style="color: #859900; font-weight: bold;">or</span> condition == <span style="color: #2aa198;">"Fair"</span>:
-    <span style="color: #268bd2;">discount</span> = 0.75
-<span style="color: #859900; font-weight: bold;">else</span>:
-    <span style="color: #268bd2;">discount</span> = 0.5
+if condition == "Excellent":
+    discount = 0.8
+elif condition == "Good" or condition == "Fair":
+    discount = 0.75
+else:
+    discount = 0.5
 
-<span style="color: #268bd2;">usedPrice</span> = usedPrice * discount
-<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"It's worth &#163;"</span> + <span style="color: #657b83; font-weight: bold;">str</span>(usedPrice))
+usedPrice = usedPrice * discount
+print("It's worth £" + str(usedPrice))
 </pre>
 </div>
 

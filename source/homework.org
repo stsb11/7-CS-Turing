@@ -130,9 +130,12 @@ print(annualApples)
 #+BEGIN_SRC python
 # Question 2. Leftovers.
 daysInYear = 365
-weeksInYear = 365 % 52
+daysInWeek = 7
+weeksinYear = daysInYear // daysInWeek
+whatsLeft = daysInYear % daysInWeek
 
 print(weeksInYear)
+print(whatsLeft)
 #+END_SRC
 
 #+BEGIN_SRC python
