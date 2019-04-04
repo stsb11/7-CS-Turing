@@ -16,7 +16,7 @@
 * [[file:pages/1_Lesson.html][Week 1 - Variables]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
-:END:
+:END:      
 * [[file:pages/2_Lesson.html][Week 2 - Calculations]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
@@ -40,7 +40,11 @@
 * [[file:pages/7_Lesson.html][Week 7 - Loops and Conditionals]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
-:END:
+:END:      
+* [[file:pages/evaluation.html][End of Unit Evaluation]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: link-heading
+:END:      
 * [[file:pages/homework.html][Homework Tasks]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
