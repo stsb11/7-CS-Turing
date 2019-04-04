@@ -97,7 +97,7 @@
 :HTML_CONTAINER_CLASS: activity
 :END:
 
-** Instructions for Writting Your Evaluation
+** Instructions for Writing Your Evaluation
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
